@@ -1,0 +1,10 @@
+# Fish Audio credentials for X3 Constellation voice generation.
+# Copy this file to  fish_audio.config  (which is gitignored) and fill it in.
+API_KEY=your_fish_audio_api_key_here
+# Backbone model id. Set to whatever your account calls "S2" if this is not it.
+MODEL=s1
+# One reference voice id per department so the crew sound like different people.
+# Get ids from https://fish.audio ; leave blank to use the model's default voice.
+NAVIGATION_VOICE_ID=
+SCIENCE_VOICE_ID=
+ENGINEERING_VOICE_ID=

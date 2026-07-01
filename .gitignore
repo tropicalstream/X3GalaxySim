@@ -1,0 +1,8 @@
+build/
+.gradle/
+*.iml
+local.properties
+.DS_Store
+
+# NOTE: app/tools/fish_audio.config is committed on purpose (alpha) so the public
+# can hear the Fish Audio voices. The key will be rotated later.
