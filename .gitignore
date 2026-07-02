@@ -1,8 +1,18 @@
-build/
-.gradle/
 *.iml
+.gradle/
 local.properties
+.idea/
 .DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+__pycache__/
+*.pyc
 
-# NOTE: app/tools/fish_audio.config is committed on purpose (alpha) so the public
-# can hear the Fish Audio voices. The key will be rotated later.
+# SECRETS — never commit the Fish Audio key or voice ids
+app/tools/fish.config
+app/tools/voice_design_out/
+
+# Release binaries are uploaded to GitHub releases, not committed
+releases/*.apk

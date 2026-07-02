@@ -1,0 +1,1740 @@
+{
+  "durationMs": 3600000,
+  "keyframes": [
+    [
+      0,
+      0.0
+    ],
+    [
+      120000,
+      0.0
+    ],
+    [
+      300000,
+      1.0
+    ],
+    [
+      450000,
+      2.0
+    ],
+    [
+      600000,
+      3.0
+    ],
+    [
+      810000,
+      4.0
+    ],
+    [
+      960000,
+      4.0
+    ],
+    [
+      1080000,
+      5.0
+    ],
+    [
+      1200000,
+      6.0
+    ],
+    [
+      1350000,
+      7.0
+    ],
+    [
+      1470000,
+      7.0
+    ],
+    [
+      1530000,
+      8.0
+    ],
+    [
+      1650000,
+      9.0
+    ],
+    [
+      1770000,
+      9.0
+    ],
+    [
+      1830000,
+      10.0
+    ],
+    [
+      1950000,
+      11.0
+    ],
+    [
+      2070000,
+      12.0
+    ],
+    [
+      2190000,
+      13.0
+    ],
+    [
+      2280000,
+      14.0
+    ],
+    [
+      2370000,
+      15.0
+    ],
+    [
+      2460000,
+      16.0
+    ],
+    [
+      2610000,
+      17.0
+    ],
+    [
+      2730000,
+      18.0
+    ],
+    [
+      2820000,
+      18.0
+    ],
+    [
+      2910000,
+      19.0
+    ],
+    [
+      3000000,
+      19.0
+    ],
+    [
+      3090000,
+      20.0
+    ],
+    [
+      3180000,
+      21.0
+    ],
+    [
+      3270000,
+      22.0
+    ],
+    [
+      3390000,
+      23.0
+    ],
+    [
+      3450000,
+      23.0
+    ],
+    [
+      3510000,
+      24.0
+    ],
+    [
+      3600000,
+      24.0
+    ]
+  ],
+  "cues": [
+    {
+      "t": 500,
+      "scene": {
+        "title": "PROJECT PALE BLUE",
+        "sub": "A GRAND TOUR OF SOL & BEYOND"
+      }
+    },
+    {
+      "t": 1200,
+      "reframe": "forward",
+      "role": "NAVIGATION",
+      "clip": "welcome",
+      "text": "[bright smile in the voice, unhurried, like greeting an old friend aboard] Welcome aboard the Pale Blue, traveler. [soft chuckle] I'm Captain Vale, and for the next hour this bridge is yours. [leaning closer, conspiratorial] Seatbelt reads green — [beat] and that is all the flying you will ever have to do."
+    },
+    {
+      "t": 12000,
+      "role": "ENGINEERING",
+      "clip": "preflight_core",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Matter–antimatter core is idling at point-two percent, Captain. She purrs like a cat that knows it owns the house."
+    },
+    {
+      "t": 24000,
+      "role": "SCIENCE",
+      "clip": "preflight_view",
+      "reframe": "down",
+      "text": "[hushed awe, speaking the numbers like poetry] Before we go — look down. Every human being who ever lived, lived there. Tonight we find out how far 'there' reaches."
+    },
+    {
+      "t": 40000,
+      "role": "NAVIGATION",
+      "clip": "type1_intro",
+      "text": "[crisp command voice, projected across the bridge, decisive] Flight plan is locked: the solar system end to end, then out where the maps go quiet. Departure window opens in ninety seconds."
+    },
+    {
+      "t": 52000,
+      "role": "SCIENCE",
+      "clip": "type1_arrays",
+      "text": "[eyes-wide wonder, voice bright and rising] Those bright rings threading the equator? Orbital solar arrays. Humanity finally learned to drink straight from its own star — a full Kardashev Type One civilization."
+    },
+    {
+      "t": 68000,
+      "role": "ENGINEERING",
+      "clip": "type1_elevators",
+      "text": "[chuckling low in the chest, mischief in the burr] And the silver threads reaching up from the mountains are the space elevators. My grandmother welded on the first one. Called it her wee ladder to heaven."
+    },
+    {
+      "t": 84000,
+      "role": "SCIENCE",
+      "clip": "type1_climate",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Notice the coastlines match the old maps again. It took a century of planetary-scale energy to heal what a century of burning had broken. We kept the receipts so we'd never forget."
+    },
+    {
+      "t": 100000,
+      "role": "NAVIGATION",
+      "clip": "countdown",
+      "text": "[crisp command voice, projected across the bridge, decisive] All decks, departure in ten. Engineering, give me a gentle first push — we have a guest aboard."
+    },
+    {
+      "t": 104000,
+      "scene": {
+        "title": "I · LEAVING HOME",
+        "sub": "EARTH — A TYPE 1 CIVILIZATION"
+      }
+    },
+    {
+      "t": 112000,
+      "sfx": "engine_ignite",
+      "shader": {
+        "beta": 0.02
+      }
+    },
+    {
+      "t": 114000,
+      "role": "ENGINEERING",
+      "clip": "ignition",
+      "text": "[coiled tension] Ignition. Constrictors aligned... [held breath] [long exhale, tension melting into a grin] and we are away. [proud, almost purring] Smooth as butter on a warm scone."
+    },
+    {
+      "t": 126000,
+      "role": "SCIENCE",
+      "clip": "leaving_earth",
+      "text": "[voice catching slightly, tender] There she goes. [pause] From up here you can't see a single border — [soft wonder] just one blue engine of life, running on sunlight."
+    },
+    {
+      "t": 145000,
+      "role": "NAVIGATION",
+      "clip": "leo_traffic",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Traffic control cleared us through the orbital shipyards. Those hulls under construction are seed-ships — gardens first, engines second. We build hope with hull plating now."
+    },
+    {
+      "t": 165000,
+      "role": "SCIENCE",
+      "clip": "night_lights",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] The night side used to blaze with wasted light. Now the cities glow soft and gold — every photon budgeted, every watt a choice. Efficiency turned out to be beautiful."
+    },
+    {
+      "t": 188000,
+      "role": "ENGINEERING",
+      "clip": "grav_comfort",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] If your stomach flutters, that's the inertial dampers holding you at one gee. You could pour tea on my bridge at half the speed of light. I have. It was excellent tea."
+    },
+    {
+      "t": 207000,
+      "scene": {
+        "title": "II · THE PALE COMPANION",
+        "sub": "LUNA · 384,400 KM"
+      }
+    },
+    {
+      "t": 210000,
+      "role": "NAVIGATION",
+      "clip": "course_moon",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Coming up on the Moon — three hundred eighty-four thousand kilometers out. Light makes this trip in one and a quarter seconds. It took us three days, once. Watch how times change."
+    },
+    {
+      "t": 235000,
+      "role": "SCIENCE",
+      "clip": "moon_birth",
+      "text": "[precise and quietly delighted by the details, professorial warmth] The Moon was carved from Earth itself — a Mars-sized impact, four and a half billion years ago. Our tides, our steady seasons, even the length of our day: all gifts from that catastrophe."
+    },
+    {
+      "t": 262000,
+      "role": "SCIENCE",
+      "clip": "moon_craters",
+      "text": "[eyes-wide wonder, voice bright and rising] Every crater is a diary entry the sky wrote. No wind, no rain — nothing here ever forgets."
+    },
+    {
+      "t": 285000,
+      "role": "ENGINEERING",
+      "clip": "moon_helium",
+      "text": "[chuckling low in the chest, mischief in the burr] See the glass domes on Mare Imbrium? Helium-three refineries and the finest low-gravity distillery in the system. Purely for research, you understand."
+    },
+    {
+      "t": 305000,
+      "role": "NAVIGATION",
+      "clip": "moon_farside",
+      "text": "[warm, smiling through the words, easy captain’s confidence] On the far side, the great radio observatory listens in perfect silence — the quietest place humanity owns. We turned the back of the Moon into an ear."
+    },
+    {
+      "t": 330000,
+      "role": "SCIENCE",
+      "clip": "moon_footprints",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] The first footprints are still up there, preserved under a memorial field. A reminder that every giant leap starts as a wobble."
+    },
+    {
+      "t": 352000,
+      "role": "NAVIGATION",
+      "clip": "course_venus",
+      "text": "[crisp command voice, projected across the bridge, decisive] Helm coming about for the inner system. Next stop Venus — and then, friends, we're going to lean right into the fire."
+    },
+    {
+      "t": 372000,
+      "sfx": "whoosh_flyby",
+      "shader": {
+        "beta": 0.05
+      }
+    },
+    {
+      "t": 375000,
+      "role": "ENGINEERING",
+      "clip": "sunward_prep",
+      "text": "[tense, jaw tight, eyes flicking across the readouts] Rolling out the thermal shielding early. Sunward legs make an engineer's palms sweat, and I'd like the record to show mine are merely damp."
+    },
+    {
+      "t": 396000,
+      "scene": {
+        "title": "III · THE TWIN THAT BURNED",
+        "sub": "VENUS · 0.72 AU"
+      }
+    },
+    {
+      "t": 400000,
+      "role": "SCIENCE",
+      "clip": "venus_approach",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Venus: Earth's twin in size, her opposite in fate. A runaway greenhouse boiled her oceans away — ninety atmospheres of carbon dioxide, four hundred sixty degrees Celsius at the surface."
+    },
+    {
+      "t": 425000,
+      "role": "SCIENCE",
+      "clip": "venus_warning",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] We studied her like a doctor studies a disease that nearly took a sibling. Venus taught us what unchecked warming becomes. She was the warning label on our own sky."
+    },
+    {
+      "t": 450000,
+      "role": "NAVIGATION",
+      "clip": "venus_clouds",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Those cloud decks race the planet in four days flat while the ground below takes two hundred forty-three to turn once. Even her weather refuses to keep her own time."
+    },
+    {
+      "t": 472000,
+      "role": "ENGINEERING",
+      "clip": "venus_cloudcities",
+      "text": "[chuckling low in the chest, mischief in the burr] Fifty kilometers up it's shirtsleeve pressure and spring temperatures, so we floated research stations in the clouds. Cities held aloft by breathable air — daftest blueprint I ever loved."
+    },
+    {
+      "t": 495000,
+      "role": "SCIENCE",
+      "clip": "venus_terraform",
+      "text": "[eyes-wide wonder, voice bright and rising] The centuries-long question is whether we can give her oceans back. Sunshades, carbon rain, patience measured in generations. A Type One civilization plants trees whose shade it will never sit in."
+    },
+    {
+      "t": 516000,
+      "scene": {
+        "title": "IV · THE FURNACE",
+        "sub": "SOL · PERIHELION PASS"
+      }
+    },
+    {
+      "t": 520000,
+      "role": "NAVIGATION",
+      "clip": "sun_course",
+      "text": "[crisp command voice, projected across the bridge, decisive] New heading: straight for the Sun. Perihelion pass in five minutes. Chief, your shields are about to earn their pension."
+    },
+    {
+      "t": 540000,
+      "role": "ENGINEERING",
+      "clip": "sun_shields_up",
+      "text": "[strained, shouting over engine noise through gritted teeth] Thermal shielding at full deployment. Reflectivity ninety-nine point nine seven percent. That last point-zero-three percent, I take personally."
+    },
+    {
+      "t": 562000,
+      "role": "SCIENCE",
+      "clip": "sun_scale",
+      "text": "[hushed awe, speaking the numbers like poetry] The Sun holds ninety-nine point eight percent of the solar system's mass. A million Earths would fit inside. And it is, by every measurement we own, an utterly average star. Let that recalibrate your sense of ordinary."
+    },
+    {
+      "t": 590000,
+      "role": "SCIENCE",
+      "clip": "sun_fusion",
+      "text": "[eyes-wide wonder, voice bright and rising] Its core fuses six hundred million tons of hydrogen every second. The light born there wanders a hundred thousand years to reach the surface — then sprints to Earth in eight minutes. Sunshine is ancient history moving at light speed."
+    },
+    {
+      "t": 620000,
+      "role": "ENGINEERING",
+      "clip": "sun_temp_read",
+      "text": "[tense, jaw tight, eyes flicking across the readouts] Hull skin reading fourteen hundred Kelvin and climbing. Coolant loops are singing. She's fine. I'm fine. Everything is fine."
+    },
+    {
+      "t": 640000,
+      "sfx": "solar_flare",
+      "shader": {
+        "impact": 0.7
+      }
+    },
+    {
+      "t": 642000,
+      "role": "ENGINEERING",
+      "clip": "sun_flare_hit",
+      "text": "[shouting over a roar, exhilarated rather than afraid] Prominence! Deflectors caught the plasma wash — [quick breath] that ripple you saw was a few billion tons of star shrugging at us! [steadying, dry] Shields holding at ninety-four."
+    },
+    {
+      "t": 662000,
+      "role": "SCIENCE",
+      "clip": "sun_corona",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Curious fact: the corona around us is two million degrees, hundreds of times hotter than the surface below. The Sun saves its strangest mystery for its outermost breath."
+    },
+    {
+      "t": 688000,
+      "role": "NAVIGATION",
+      "clip": "sun_perihelion",
+      "text": "[low and warm, letting the moment breathe] This is as close as any pleasure craft is licensed to fly. [pause] Twelve million kilometers off the photosphere. [quiet pride] You are currently closer to a star than any human generation before ours could dream."
+    },
+    {
+      "t": 715000,
+      "role": "SCIENCE",
+      "clip": "sun_dyson",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] See the pinpoints transiting the disk? Collector swarms — the outer petals of our energy grid. Not a cage around the star; more like cupped hands. We take a hundredth of a billionth, and it remade our whole world."
+    },
+    {
+      "t": 745000,
+      "role": "ENGINEERING",
+      "clip": "sun_power_home",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Every desalination plant, every hospital, every midnight streetlamp back home — it all runs on this furnace. When folk ask what ended scarcity, I point at the big yellow thing."
+    },
+    {
+      "t": 775000,
+      "role": "SCIENCE",
+      "clip": "sun_death",
+      "text": "[precise and quietly delighted by the details, professorial warmth] In five billion years it will swell into a red giant and swallow the inner worlds. We have long since decided that won't be an obituary. It's a deadline."
+    },
+    {
+      "t": 805000,
+      "role": "NAVIGATION",
+      "clip": "sun_depart",
+      "text": "[crisp command voice, projected across the bridge, decisive] Perihelion complete. Coming about — trading fire for frost. Mars in three minutes, and the light around you will start to thin. Watch for it."
+    },
+    {
+      "t": 825000,
+      "sfx": "engine_ignite",
+      "shader": {
+        "beta": 0.06,
+        "impact": 0.0
+      }
+    },
+    {
+      "t": 845000,
+      "role": "SCIENCE",
+      "clip": "inverse_square",
+      "text": "[eyes-wide wonder, voice bright and rising] Feel the dimming? Sunlight obeys the inverse square law — twice as far, a quarter as bright. The whole rest of this voyage is a slow goodbye to daylight. I promise it's worth it."
+    },
+    {
+      "t": 880000,
+      "role": "ENGINEERING",
+      "clip": "shields_stow",
+      "text": "[chuckling low in the chest, mischief in the burr] Stowing the heat shields. Ninety-six percent integrity after a solar kiss — I've had worse sunburns at the beach, and the beach never tried to eat the ship."
+    },
+    {
+      "t": 915000,
+      "role": "SCIENCE",
+      "clip": "mercury_mention",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Off to port, little Mercury — a world of eight-hundred-degree days and frozen nights, spinning exactly three times for every two orbits. The Sun's closest child, and its most stubborn."
+    },
+    {
+      "t": 946000,
+      "scene": {
+        "title": "V · RED SANDS, STONE RAIN",
+        "sub": "MARS & THE ASTEROID BELT"
+      }
+    },
+    {
+      "t": 950000,
+      "role": "NAVIGATION",
+      "clip": "mars_ahead",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Mars ahead — the rust-red coin growing in the window. Half of you probably has family there by now. Population twelve million and stubborn about all of it."
+    },
+    {
+      "t": 985000,
+      "role": "SCIENCE",
+      "clip": "mars_water",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Those canyons were carved by rivers when Mars was three billion years younger. It lost its magnetic field, then its air, then its oceans. Worlds can die of natural causes. Ours nearly died of preventable ones."
+    },
+    {
+      "t": 1015000,
+      "role": "ENGINEERING",
+      "clip": "mars_domes",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] The green freckles on Hellas Basin are the farm domes. Martian potatoes, Martian barley, and aye — Martian whisky. Terrible stuff. Improving yearly."
+    },
+    {
+      "t": 1045000,
+      "role": "SCIENCE",
+      "clip": "mars_terraform",
+      "text": "[eyes-wide wonder, voice bright and rising] The polar mirrors you see glinting are thickening the atmosphere a fraction of a percent per decade. Children born today may hike Olympus Mons without a suit before they're old. Patience is a technology too."
+    },
+    {
+      "t": 1080000,
+      "role": "NAVIGATION",
+      "clip": "mars_moons",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Phobos and Deimos, the two hurried little moons — Phobos circles Mars three times in a Martian day. In fifty million years it falls. We're already arguing about whether to catch it."
+    },
+    {
+      "t": 1115000,
+      "role": "NAVIGATION",
+      "clip": "belt_enter",
+      "text": "[crisp command voice, projected across the bridge, decisive] Entering the main asteroid belt. Don't brace — the average gap between rocks out here is a million kilometers. The movies lied to you, and I'm sorry."
+    },
+    {
+      "t": 1140000,
+      "sfx": "ring_ping",
+      "shader": {
+        "impact": 0.25
+      }
+    },
+    {
+      "t": 1142000,
+      "role": "ENGINEERING",
+      "clip": "belt_pebble",
+      "text": "[chuckling low in the chest, mischief in the burr] That wee chime was a pebble the size of a grape tapping the deflectors. At our speed it hit with the energy of a cannonball. Space is mostly empty. Mostly."
+    },
+    {
+      "t": 1165000,
+      "role": "SCIENCE",
+      "clip": "belt_ceres",
+      "text": "[precise and quietly delighted by the details, professorial warmth] The bright point starboard is Ceres — a quarter of all the belt's mass, with more fresh water as ice than Earth holds in every lake and river. The belt isn't debris. It's a pantry."
+    },
+    {
+      "t": 1195000,
+      "role": "SCIENCE",
+      "clip": "belt_mining",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Our foundries out here chew iron and platinum from rocks that would have someday hit somebody. Planetary defense and industry in one gesture — we stopped digging mines into our own living skin."
+    },
+    {
+      "t": 1225000,
+      "role": "ENGINEERING",
+      "clip": "belt_shipyards",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Half this ship was smelted in belt foundries. Zero-gravity steel has no seams. She's not welded so much as grown, like a very angry pearl."
+    },
+    {
+      "t": 1255000,
+      "role": "NAVIGATION",
+      "clip": "jupiter_course",
+      "text": "[warm, smiling through the words, easy captain’s confidence] And now the giant. Jupiter, coming up fast — first you'll see a star that refuses to twinkle, then a coin, then a wall. Nobody's ready the first time. That's the fun of it."
+    },
+    {
+      "t": 1286000,
+      "scene": {
+        "title": "VI · KING OF WORLDS",
+        "sub": "JUPITER · 5.2 AU"
+      }
+    },
+    {
+      "t": 1290000,
+      "role": "SCIENCE",
+      "clip": "jupiter_scale",
+      "text": "[hushed awe, speaking the numbers like poetry] Jupiter. Thirteen hundred Earths would vanish inside it. It out-weighs every other planet combined, twice over. When astronomers say 'the solar system is the Sun, Jupiter, and assorted crumbs' — we are the crumbs."
+    },
+    {
+      "t": 1320000,
+      "sfx": "alarm_soft"
+    },
+    {
+      "t": 1322000,
+      "role": "ENGINEERING",
+      "clip": "jupiter_radiation",
+      "text": "[tense, jaw tight, eyes flicking across the readouts] Entering the radiation belts — charged particles whipped to relativistic speeds by that monster's magnetic field. Shields to full. This is the worst weather in the solar system and we are sailing straight through the middle of it."
+    },
+    {
+      "t": 1340000,
+      "sfx": "shield_impact",
+      "shader": {
+        "impact": 1.0
+      }
+    },
+    {
+      "t": 1342000,
+      "role": "ENGINEERING",
+      "clip": "jupiter_shield_hits",
+      "text": "[strained, shouting over engine noise through gritted teeth] There's the hail! Deflectors flaring on the port bow — every spark you see is a particle that would've cooked an unshielded hull in minutes. Ninety-one percent and steady. She was built for this."
+    },
+    {
+      "t": 1365000,
+      "role": "SCIENCE",
+      "clip": "jupiter_spot",
+      "text": "[eyes-wide wonder, voice bright and rising] The Great Red Spot — a storm three centuries old and wider than our whole home planet. Winds past four hundred kilometers an hour, going nowhere, forever. Even fury can be a landmark."
+    },
+    {
+      "t": 1395000,
+      "role": "NAVIGATION",
+      "clip": "jupiter_shepherd",
+      "text": "[warm, smiling through the words, easy captain’s confidence] We owe this giant. Its gravity has been sweeping comets out of Earth's path for four billion years. The biggest bodyguard in history, and it never sent a bill."
+    },
+    {
+      "t": 1422000,
+      "role": "SCIENCE",
+      "clip": "jupiter_metallic",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Below those clouds, pressure crushes hydrogen into liquid metal — an ocean of quicksilver lightning bigger than worlds. Jupiter almost became a star. It needed eighty times more mass. It settled for being unforgettable."
+    },
+    {
+      "t": 1455000,
+      "shader": {
+        "impact": 0.0
+      }
+    },
+    {
+      "t": 1458000,
+      "role": "NAVIGATION",
+      "clip": "jovian_moons_intro",
+      "text": "[crisp command voice, projected across the bridge, decisive] Threading the Galilean moons now — four worlds Galileo caught with a glass tube in 1610, and with them, proof that not everything orbits us. Best demotion humanity ever got."
+    },
+    {
+      "t": 1485000,
+      "role": "SCIENCE",
+      "clip": "io_volcanoes",
+      "text": "[thrilled, words tumbling faster, barely containing a grin] Io, off the port side — four hundred active volcanoes, squeezed like a stress ball by Jupiter's tides. It turns itself inside out every million years. The most tormented real estate in the system."
+    },
+    {
+      "t": 1515000,
+      "role": "SCIENCE",
+      "clip": "europa_ocean",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] And Europa. Under that cracked ice shell is a saltwater ocean twice the volume of all Earth's seas. Our probes swim there among vent-fields, still cataloguing chemistries. If we ever find neighbors, the smart money says they're pale, patient, and swimming."
+    },
+    {
+      "t": 1545000,
+      "role": "ENGINEERING",
+      "clip": "europa_protocol",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Which is why nothing lands there without a sterilization order signed in triplicate. First rule of the Type One handbook: you do not track mud into somebody else's maybe-nursery."
+    },
+    {
+      "t": 1575000,
+      "role": "NAVIGATION",
+      "clip": "saturn_course",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Setting course for the jewel box. Saturn's rings read on sensors long before the planet does — and Captain's privilege, I've flown this leg two hundred times just to watch faces when the rings resolve."
+    },
+    {
+      "t": 1610000,
+      "scene": {
+        "title": "VII · THE JEWEL BOX",
+        "sub": "SATURN · THREADING THE RINGS"
+      }
+    },
+    {
+      "t": 1615000,
+      "role": "SCIENCE",
+      "clip": "saturn_rings_intro",
+      "text": "[hushed awe, speaking the numbers like poetry] There. Two hundred eighty thousand kilometers of ring, and in most places just ten meters thick. Scaled to a sheet of paper the size of a city, it would be thinner than the paper. The most delicate structure gravity ever drew."
+    },
+    {
+      "t": 1650000,
+      "role": "NAVIGATION",
+      "clip": "rings_thread",
+      "text": "[commanding but hushed, like a golfer's putt] All hands: we are going to thread the Encke Gap. [beat] Three hundred twenty-five kilometers of clearance. [dry half-smile] I've done this before. The rings have not. [warm] Chief — soft hands on the deflectors."
+    },
+    {
+      "t": 1668000,
+      "sfx": "ring_ping",
+      "shader": {
+        "impact": 0.5
+      }
+    },
+    {
+      "t": 1670000,
+      "role": "ENGINEERING",
+      "clip": "rings_ice_taps",
+      "text": "[strained, shouting over engine noise through gritted teeth] Ice on the shields! Snowballs to house-sized bergs out there — hear them ring? That's a trillion tumbling glaciers applauding as we pass. Deflectors at ninety-six. Gorgeous and terrifying, like most things worth doing."
+    },
+    {
+      "t": 1695000,
+      "role": "SCIENCE",
+      "clip": "rings_young",
+      "text": "[eyes-wide wonder, voice bright and rising] Here's the secret: these rings are young. Likely under a hundred million years — the dinosaurs never saw them. A moon wandered too close, was torn to ribbons, and became the most beautiful wreckage in the sky."
+    },
+    {
+      "t": 1725000,
+      "role": "SCIENCE",
+      "clip": "saturn_density",
+      "text": "[soft amused laugh under the words] [precise and quietly delighted by the details, professorial warmth] Saturn itself is lighter than water — drop it in a cosmic bathtub and it floats. Sixty-two hundred kilometer-per-hour winds at the equator, and a permanent hexagonal storm on the north pole that we still argue about at conferences."
+    },
+    {
+      "t": 1758000,
+      "role": "NAVIGATION",
+      "clip": "rings_shadow",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Passing into the ring shadow now — feel the hush. Sunlight through a hundred thousand strands of ice. Cathedrals wish."
+    },
+    {
+      "t": 1790000,
+      "role": "NAVIGATION",
+      "clip": "titan_approach",
+      "text": "[crisp command voice, projected across the bridge, decisive] Dropping toward Titan, Saturn's giant moon — the only moon in the system wearing a real atmosphere. Thicker than Earth's, in fact. Prepare for orange."
+    },
+    {
+      "t": 1820000,
+      "role": "SCIENCE",
+      "clip": "titan_lakes",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Under that haze: rivers, rain, and seas — of liquid methane at minus one seventy-nine Celsius. A complete water cycle with the water swapped out. Nature loves a theme with variations."
+    },
+    {
+      "t": 1850000,
+      "role": "ENGINEERING",
+      "clip": "titan_fuel",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Titan's seas hold more hydrocarbons than Earth ever burned. We don't burn them, mind — we build with them. Polymer feedstock for half the outer system. The age of setting fire to our fuel is over; now we sculpt it."
+    },
+    {
+      "t": 1880000,
+      "role": "SCIENCE",
+      "clip": "titan_life_question",
+      "text": "[eyes-wide wonder, voice bright and rising] Some of my colleagues think methane-based biochemistry could work here — life that drinks liquid natural gas and exhales acetylene. If they're right, 'habitable' is a bigger word than we were taught."
+    },
+    {
+      "t": 1912000,
+      "role": "NAVIGATION",
+      "clip": "uranus_course",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Outbound for the ice giants. The Sun is a bright star behind us now — hold your thumb up and you can cover the whole inner system, home included."
+    },
+    {
+      "t": 1938000,
+      "scene": {
+        "title": "VIII · THE ICE GIANTS",
+        "sub": "URANUS & NEPTUNE"
+      }
+    },
+    {
+      "t": 1945000,
+      "role": "SCIENCE",
+      "clip": "uranus_tilt",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Uranus, rolling into view — and I do mean rolling. It orbits tipped on its side, ninety-eight degrees over, probably from an ancient collision. Its seasons last twenty-one years each. Imagine a two-decade winter night, then don't move there."
+    },
+    {
+      "t": 1978000,
+      "role": "SCIENCE",
+      "clip": "uranus_cold",
+      "text": "[eyes-wide wonder, voice bright and rising] It's the coldest planet we own — minus two hundred twenty-four Celsius — colder even than Neptune, though Neptune is half again farther out. Uranus barely leaks internal heat, and honestly? We still don't fully know why. I love that we still have homework."
+    },
+    {
+      "t": 2010000,
+      "role": "ENGINEERING",
+      "clip": "uranus_diamonds",
+      "text": "[chuckling low in the chest, mischief in the burr] Down in those depths, pressure squeezes methane until carbon crystallizes and falls. Diamond rain, Captain. Trillions of carats a year, and not a single jeweler within two billion kilometers. Tragic."
+    },
+    {
+      "t": 2045000,
+      "role": "NAVIGATION",
+      "clip": "neptune_approach",
+      "text": "[crisp command voice, projected across the bridge, decisive] Neptune ahead — last of the giants, and the first planet found with mathematics before telescopes. Le Verrier computed where it must hide from Uranus's wobble. We aimed a lens, and there it was. Arithmetic, discovering a world."
+    },
+    {
+      "t": 2080000,
+      "role": "SCIENCE",
+      "clip": "neptune_winds",
+      "text": "[hushed awe, speaking the numbers like poetry] That deep, impossible blue — with the fastest winds in the solar system tearing through it. Two thousand kilometers per hour, on a world that gets a thousandth of our sunlight. Nobody fully knows what powers them. The universe keeps a few engines under the hood."
+    },
+    {
+      "t": 2115000,
+      "role": "SCIENCE",
+      "clip": "neptune_triton",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Its great moon Triton orbits backwards — a kidnapped Kuiper Belt world, geysering nitrogen frost. In a few billion years Neptune's tides will tear it into a ring. We've already written the memorial. Astronomers plan long."
+    },
+    {
+      "t": 2150000,
+      "role": "ENGINEERING",
+      "clip": "neptune_outpost",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] See the lights on Triton's south pole? Farthest permanent settlement of the human species. Two hundred souls, one pub. The beer takes four hours to order from Earth by radio, so they learned to brew their own."
+    },
+    {
+      "t": 2181000,
+      "scene": {
+        "title": "IX · THE FRONTIER",
+        "sub": "PLUTO · KUIPER · HELIOPAUSE"
+      }
+    },
+    {
+      "t": 2185000,
+      "role": "NAVIGATION",
+      "clip": "pluto_course",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Now a courtesy call the old charts would've skipped: Pluto. Planet, dwarf planet — the little world never cared what we called it. It just kept being wonderful."
+    },
+    {
+      "t": 2215000,
+      "role": "SCIENCE",
+      "clip": "pluto_heart",
+      "text": "[tender and intimate, almost a lullaby] There's the heart — Sputnik Planitia, a glacier of nitrogen ice the size of a country, slowly churning like a lava lamp a thousand kilometers wide. When our first probe flew past in 2015, a frozen world nobody had ever seen clearly greeted us with a valentine."
+    },
+    {
+      "t": 2248000,
+      "role": "SCIENCE",
+      "clip": "pluto_binary",
+      "text": "[eyes-wide wonder, voice bright and rising] Pluto and its moon Charon orbit a point in the empty space between them — a true double world, holding hands across seventeen thousand kilometers, tide-locked face to face forever. Even out here, gravity writes love stories."
+    },
+    {
+      "t": 2278000,
+      "role": "NAVIGATION",
+      "clip": "kuiper_enter",
+      "text": "[crisp command voice, projected across the bridge, decisive] We're in the Kuiper Belt proper now — a hundred thousand icy worlds, leftovers from the solar system's construction site. Eris, Makemake, Haumea spinning like a thrown egg... [pause] the attic of the solar system, and every box is labeled 'someday'."
+    },
+    {
+      "t": 2312000,
+      "role": "ENGINEERING",
+      "clip": "kuiper_comets",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Every comet that ever lit a king's sky or scared a village came from out here or farther. We mine a few for water and reaction mass. Snowballs that outlived the dinosaurs, melted into tea. I try not to think about it too hard."
+    },
+    {
+      "t": 2348000,
+      "role": "SCIENCE",
+      "clip": "heliopause_intro",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Coming up: the heliopause — where the Sun's wind of charged particles finally stalls against the breath of other stars. The physical edge of our star's weather. Voyager 1 crossed it in 2012, carrying a golden record and our best manners."
+    },
+    {
+      "t": 2382000,
+      "role": "NAVIGATION",
+      "clip": "heliopause_cross",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Mark it... [pause] now. You have officially left the Sun's atmosphere, friends. Every human who ever lived and died did so inside the bubble behind you. Except us, tonight."
+    },
+    {
+      "t": 2400000,
+      "ambient": "warp_drone"
+    },
+    {
+      "t": 2405000,
+      "role": "ENGINEERING",
+      "clip": "warp_prep",
+      "text": "[tense, jaw tight, eyes flicking across the readouts] All right, Captain, she's asking for it — warp field coils charged, matter and antimatter streams balanced to one part in a trillion. Interstellar legs need interstellar speeds. On your word."
+    },
+    {
+      "t": 2425000,
+      "role": "NAVIGATION",
+      "clip": "warp_order",
+      "text": "[crisp command voice, projected across the bridge, decisive] Word given. All hands, all guests: the stars ahead are about to run blue and the stars behind will bleed red. That's not the glass — that's physics saluting. Chief... [pause] punch it."
+    },
+    {
+      "t": 2440000,
+      "sfx": "warp_jump",
+      "shader": {
+        "beta": 0.35
+      }
+    },
+    {
+      "t": 2452000,
+      "shader": {
+        "beta": 0.6
+      }
+    },
+    {
+      "t": 2455000,
+      "role": "SCIENCE",
+      "clip": "doppler_explain",
+      "text": "[thrilled, words tumbling faster, barely containing a grin] Look at the bow window! We're crowding light-speed, and every photon ahead is compressed — blueshifted — while the wake behind stretches red. The Doppler effect, painted across the entire sky. You are watching relativity with your naked eyes."
+    },
+    {
+      "t": 2492000,
+      "role": "SCIENCE",
+      "clip": "time_dilation",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] At these speeds, our clocks run slow relative to home. We'll live this hour; Earth will live a touch more. Every starship crew is a small time capsule, mailed to the future at a discount."
+    },
+    {
+      "t": 2528000,
+      "role": "ENGINEERING",
+      "clip": "warp_hum",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Hear that low note in the deck? Warp coils in harmony. Every ship sings a wee bit flat or sharp — engineers can name a vessel blindfolded by her hum. The Pale Blue sings true."
+    },
+    {
+      "t": 2557000,
+      "scene": {
+        "title": "X · THE STAR NURSERY",
+        "sub": "ORION NEBULA · 1,344 LIGHT-YEARS"
+      }
+    },
+    {
+      "t": 2562000,
+      "role": "NAVIGATION",
+      "clip": "orion_course",
+      "text": "[warm, smiling through the words, easy captain’s confidence] Destination rising: the Orion Nebula, thirteen hundred forty light-years from the porch light we left burning. You've seen it your whole life — the middle 'star' of Orion's sword. It was never a star. It's a nursery."
+    },
+    {
+      "t": 2600000,
+      "shader": {
+        "beta": 0.2
+      },
+      "ambient": "nebula_wind"
+    },
+    {
+      "t": 2612000,
+      "role": "NAVIGATION",
+      "clip": "orion_arrival",
+      "text": "[caught off guard by beauty, voice slowing into awe] Dropping out of warp... [pause] and there it is. The Orion Nebula, close enough to touch. Twenty-four light-years of glowing cloud. Cut engines to a whisper, Chief — you don't shout in a place like this."
+    },
+    {
+      "t": 2645000,
+      "role": "SCIENCE",
+      "clip": "orion_nursery",
+      "text": "[eyes-wide wonder, voice bright and rising] You are inside a stellar nursery. Those knots of brightness in the gas? Each one is a star being born — thousands of them, right now, condensing out of cold hydrogen like dew on a window. This cloud is pregnant with constellations no one has named yet."
+    },
+    {
+      "t": 2680000,
+      "role": "SCIENCE",
+      "clip": "orion_trapezium",
+      "text": "[precise and quietly delighted by the details, professorial warmth] The four brilliant giants at the heart are the Trapezium — infant stars so fierce their ultraviolet carves this whole cavern of light. The glow you see is the cloud being blown open from the inside. A womb, doing demolition."
+    },
+    {
+      "t": 2715000,
+      "role": "ENGINEERING",
+      "clip": "orion_dust",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Nav shields are brushing dust that will be planets someday. I'll want the hull swabbed after — can't have us tracking somebody's future ocean home on our boots."
+    },
+    {
+      "t": 2748000,
+      "role": "SCIENCE",
+      "clip": "orion_disks",
+      "text": "[thrilled, words tumbling faster, barely containing a grin] Look closely near the young stars — dark little disks, like drops of ink. Proplyds: protoplanetary disks. Solar systems in the womb. Four and a half billion years ago, we looked exactly like that. This is a family photo album, opened to page one."
+    },
+    {
+      "t": 2783000,
+      "role": "NAVIGATION",
+      "clip": "orion_protostar",
+      "text": "[warm, smiling through the words, easy captain’s confidence] That amber glow off the starboard bow is a protostar maybe a hundred thousand years from first light. Somebody set a reminder — I want to come back for the ignition. Best fireworks in the galaxy, if you're patient."
+    },
+    {
+      "t": 2818000,
+      "role": "SCIENCE",
+      "clip": "orion_elements",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Clouds like this one built us. The calcium in your bones, the iron in your blood — forged in stars that died before the Sun was born, scattered into nebulae, gathered again. You are not merely watching this. You're visiting relatives."
+    },
+    {
+      "t": 2855000,
+      "role": "NAVIGATION",
+      "clip": "trappist_course",
+      "text": "[crisp command voice, projected across the bridge, decisive] Next waypoint, and it's a famous one: TRAPPIST-1. Forty light-years from Earth as the photon flies. Seven worlds around one small red star — the most crowded porch in the neighborhood. Warp three, if you please."
+    },
+    {
+      "t": 2870000,
+      "sfx": "warp_jump",
+      "shader": {
+        "beta": 0.45
+      },
+      "ambient": "warp_drone"
+    },
+    {
+      "t": 2901000,
+      "scene": {
+        "title": "XI · SEVEN WORLDS",
+        "sub": "TRAPPIST-1 · 40 LIGHT-YEARS"
+      }
+    },
+    {
+      "t": 2905000,
+      "shader": {
+        "beta": 0.1
+      },
+      "ambient": "stop"
+    },
+    {
+      "t": 2910000,
+      "role": "SCIENCE",
+      "clip": "trappist_arrival",
+      "text": "[eyes-wide wonder, voice bright and rising] TRAPPIST-1. The star is barely bigger than Jupiter, cool and ember-red, and it will still be burning when the last Sun-like stars have gone dark — red dwarfs live for trillions of years. Around it: seven rocky worlds, packed closer than Mercury hugs our Sun."
+    },
+    {
+      "t": 2945000,
+      "role": "SCIENCE",
+      "clip": "trappist_ezone",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Three of them — e, f, and g — sit in the temperate zone where water can stay liquid. From the surface of one, its neighbors hang in the sky bigger than our Moon. Imagine seeing another world's weather from your garden."
+    },
+    {
+      "t": 2980000,
+      "role": "ENGINEERING",
+      "clip": "trappist_tidelock",
+      "text": "[chuckling low in the chest, mischief in the burr] Mind, they're tide-locked — one face in eternal noon, the other in endless midnight. All the property value is in the twilight ring. Sunset, forever, all the way around. Even I'd retire there, and I hate sitting still."
+    },
+    {
+      "t": 3015000,
+      "role": "SCIENCE",
+      "clip": "trappist_probes",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Our first crewed survey arrived here only a generation ago. No neighbors yet — but three biosphere candidates under study, and we knock gently. The Type One rule holds here more than anywhere: curiosity first, footprints later, harm never."
+    },
+    {
+      "t": 3046000,
+      "scene": {
+        "title": "XII · GLASS RAIN",
+        "sub": "HD 189733 b · 64 LIGHT-YEARS"
+      }
+    },
+    {
+      "t": 3050000,
+      "role": "NAVIGATION",
+      "clip": "hd_course",
+      "text": "[crisp command voice, projected across the bridge, decisive] Now for something less... [pause] hospitable. HD 189733 b — sixty-four light-years from home, a gas giant the color of deep cobalt. It looks like a marble of summer sky. It is lying to you. Helm, evasive posture on arrival."
+    },
+    {
+      "t": 3082000,
+      "sfx": "warp_jump",
+      "shader": {
+        "beta": 0.5
+      }
+    },
+    {
+      "t": 3095000,
+      "shader": {
+        "beta": 0.05
+      }
+    },
+    {
+      "t": 3098000,
+      "sfx": "glass_rain",
+      "shader": {
+        "impact": 0.85
+      }
+    },
+    {
+      "t": 3100000,
+      "role": "ENGINEERING",
+      "clip": "hd_glass_rain",
+      "text": "[yelling over shrieking wind, adrenaline cranked] Deflectors, full starboard! That blue is silicate vapor — this planet rains molten glass! [incredulous bark of a laugh] Sideways! At eight thousand seven hundred kilometers an hour! [through gritted teeth] Shards on the shields — hold, you beauty, HOLD!"
+    },
+    {
+      "t": 3128000,
+      "role": "NAVIGATION",
+      "clip": "hd_evasive",
+      "text": "[urgent and clipped, controlled adrenaline, faster] Rolling us out of the shard stream — there. Steady. Apologies for the drama, friends; some sights charge admission. You just toured the most beautiful murder weapon in the catalog."
+    },
+    {
+      "t": 3155000,
+      "role": "SCIENCE",
+      "clip": "hd_lesson",
+      "text": "[precise and quietly delighted by the details, professorial warmth] And that cobalt lie is the lesson: a world can look like paradise from forty trillion kilometers and be hell up close. Never judge a planet by its album cover. Telescopes propose; probes verify."
+    },
+    {
+      "t": 3181000,
+      "scene": {
+        "title": "XIII · THE HEART OF DARKNESS",
+        "sub": "SAGITTARIUS A* · 26,000 LIGHT-YEARS"
+      }
+    },
+    {
+      "t": 3185000,
+      "role": "NAVIGATION",
+      "clip": "core_course",
+      "text": "[crisp command voice, projected across the bridge, decisive] All right. Deep breath, everyone. Final leg: twenty-six thousand light-years, straight down the throat of the galaxy, to the heaviest thing our Milky Way owns. Maximum warp. Go."
+    },
+    {
+      "t": 3195000,
+      "sfx": "warp_jump",
+      "shader": {
+        "beta": 0.7
+      },
+      "ambient": "warp_drone"
+    },
+    {
+      "t": 3218000,
+      "role": "SCIENCE",
+      "clip": "core_starfield",
+      "text": "[hushed awe, speaking the numbers like poetry] Watch the sky thicken. In the galactic core, stars crowd a million times denser than our home suburbs. If Earth orbited here, night would never be darker than dusk, and no one would ever have needed to invent the word 'lonely'."
+    },
+    {
+      "t": 3252000,
+      "role": "ENGINEERING",
+      "clip": "core_nerves",
+      "text": "[tense, jaw tight, eyes flicking across the readouts] Core containment is green, structural fields pre-tensioned to one hundred ten percent. I've triple-checked everything twice, which the Captain assures me is called 'six checks'. Where we're going, you don't get a seventh."
+    },
+    {
+      "t": 3272000,
+      "shader": {
+        "beta": 0.15,
+        "lensing": 0.25
+      },
+      "ambient": "stop"
+    },
+    {
+      "t": 3275000,
+      "role": "SCIENCE",
+      "clip": "sgra_intro",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Sagittarius A*. Four point three million times the mass of our Sun, compressed inside a horizon smaller than Mercury's orbit. It anchors the orbit of every star you have ever seen. Including ours. We have arrived at the galaxy's keel."
+    },
+    {
+      "t": 3310000,
+      "role": "SCIENCE",
+      "clip": "sgra_lensing",
+      "text": "[hushed awe, speaking the numbers like poetry] Watch the starfield near it — see how it smears and curls? That's not distortion in the glass. Its gravity bends the light itself. Behind that black circle, spacetime is folded so hard that 'behind' stops being a place."
+    },
+    {
+      "t": 3335000,
+      "shader": {
+        "lensing": 0.6
+      },
+      "sfx": "bh_groan"
+    },
+    {
+      "t": 3338000,
+      "role": "ENGINEERING",
+      "clip": "sgra_stress",
+      "text": "[straining, voice shaking with the deck plates] Structural integrity at seventy percent! Tidal gradient is kneading the hull like bread dough — compensators at maximum! [half roar, half prayer] Captain, she'll hold the periapsis line — [gritted] but she will NOT enjoy it!"
+    },
+    {
+      "t": 3365000,
+      "role": "NAVIGATION",
+      "clip": "sgra_helm",
+      "text": "[urgent and clipped, controlled adrenaline, faster] Steady as she goes. We ride the geodesic — the hole's own gravity slings us through. Thirty seconds of the strangest sky in creation, everyone. Eyes open. You earned this."
+    },
+    {
+      "t": 3388000,
+      "shader": {
+        "lensing": 1.0
+      },
+      "sfx": "bh_groan"
+    },
+    {
+      "t": 3392000,
+      "role": "SCIENCE",
+      "clip": "sgra_periapsis",
+      "text": "[barely above a whisper, awestruck] Periapsis. [long pause] The photon ring around that darkness... is light in orbit. [slow, reverent] Some of it has circled for ages — ancient starlight on an endless carousel. [hushed] You are looking at the one place the universe keeps its light... [pause] and its silence."
+    },
+    {
+      "t": 3425000,
+      "role": "SCIENCE",
+      "clip": "sgra_time",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Down by that horizon, time itself crawls. Hold a clock there an hour and centuries pass outside. It isn't science fiction — it's the same law that nudges the satellites that found your grandmother's farm. Gravity is just honest, everywhere, about everything."
+    },
+    {
+      "t": 3458000,
+      "role": "NAVIGATION",
+      "clip": "sgra_escape",
+      "text": "[crisp command voice, projected across the bridge, decisive] And... [pause] we're through. Slingshot complete, climbing out of the well with a black hole's own momentum in our pocket. Chief, how's our ship?"
+    },
+    {
+      "t": 3462000,
+      "shader": {
+        "lensing": 0.35,
+        "beta": 0.1
+      }
+    },
+    {
+      "t": 3478000,
+      "role": "ENGINEERING",
+      "clip": "sgra_report",
+      "text": "[gruff bravado cracking into genuine emotion] Integrity ninety-one and self-healing, Captain. She groaned, she griped... [voice thickening] and she held. [sniff, recovering the growl] Finest hull ever grown from asteroid steel. I may cry, and I will deny it in the log."
+    },
+    {
+      "t": 3500000,
+      "shader": {
+        "lensing": 0.0,
+        "beta": 0.0
+      }
+    },
+    {
+      "t": 3502000,
+      "scene": {
+        "title": "XIV · THE LOOK BACK",
+        "sub": "HOME, FROM THE SHORE OF FOREVER"
+      }
+    },
+    {
+      "t": 3505000,
+      "reframe": "back",
+      "role": "NAVIGATION",
+      "clip": "lookback_maneuver",
+      "text": "[warm, smiling through the words, easy captain’s confidence] One last maneuver before home. Coming about... [pause] one hundred eighty degrees. No engines now. Just look. That faint spiral of light across the dark — that's ours. That's the Milky Way, from outside the noise. Doctor... [pause] say the words."
+    },
+    {
+      "t": 3516000,
+      "hud": 0.0
+    },
+    {
+      "t": 3520000,
+      "role": "SCIENCE",
+      "clip": "pale_blue_monologue",
+      "text": "[quiet, tender, each word placed with care] Somewhere in that spill of stars is an ordinary yellow one. And beside it, too small to see from here... [pause] a grain of blue. [long pause] [gently] Every war we fought was over some corner of that grain. Every border we bled for is invisible from this window. [voice gathering warmth and conviction] And yet — from that same grain came the mathematics that found this black hole, the ethics that made us shield a stranger's ocean, the engines that carried us here on captured sunlight. [measured, rising quietly] We were not saved by miracles. We were saved by logic joined to empathy: [beat] reason enough to read a planet's fever — and love enough to break it. [almost a whisper] The universe is not gentle. It owes us nothing. [pause] It gave us each other anyway. [tender, final] Hold that thought the way that little world holds its air — closely, and against the dark. [soft] Then go home... and be worthy of the view."
+    },
+    {
+      "t": 3588000,
+      "hud": 1.0
+    },
+    {
+      "t": 3590000,
+      "role": "NAVIGATION",
+      "clip": "ride_end",
+      "text": "[warm, a smile you can hear, gentle landing] Welcome home, traveler. The Pale Blue thanks you for flying with us. [playful] Single tap anytime to ride again — the universe isn't going anywhere. [soft chuckle] Well. [beat] Not quickly."
+    }
+  ],
+  "fillers": [
+    {
+      "role": "SCIENCE",
+      "clip": "fill_atoms",
+      "text": "[eyes-wide wonder, voice bright and rising] The iron in this hull, the calcium in your hand — forged in the cores of dying stars. Ships and sailors alike: we're all stellar salvage."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_photons",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Every second, the Sun converts four million tons of itself into light. You've been paid a share of that inheritance every day of your life."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_vacuum",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] People call space empty. But it hums with starlight, magnetism, and the microwave echo of the beginning. 'Empty' just means we had to learn better instruments."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_scale",
+      "text": "[hushed awe, speaking the numbers like poetry] If the Sun were a grapefruit in my hand, the nearest star would be another grapefruit four thousand kilometers away. And yet — here we are, visiting."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_darkmatter",
+      "text": "[precise and quietly delighted by the details, professorial warmth] Five-sixths of the universe's matter is something we cannot yet see — we only feel its gravity. I find it comforting that the cosmos still keeps most of its secrets."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_life",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Four billion years of unbroken luck: not one of your ancestors, back to the first cell, died childless. You are the current holder of the longest winning streak in known existence."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_math",
+      "text": "[eyes-wide wonder, voice bright and rising] The strangest fact I know: the universe is comprehensible. Scratch equations on a chalkboard, and neutron stars obey them. Nobody knows why reality answers our mail."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_water",
+      "text": "[precise and quietly delighted by the details, professorial warmth] The water in your body is older than the Sun — ice from interstellar clouds, delivered by comets, endlessly borrowed. You are a temporary custodian of very well-traveled rain."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_type2",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] Type One was taming our planet's energy. Type Two would be the whole star's. The engineering is imaginable; the wisdom to wield it kindly is the real megastructure."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_silence",
+      "text": "[tender and intimate, almost a lullaby] I like these quiet stretches. The universe spent thirteen point eight billion years composing this view. The least we can do is listen for a minute."
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_antimatter",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Her fuel is antimatter, held in magnetic bottles that never — ever — get to blink. A gram mishandled would ruin everyone's afternoon. So we don't mishandle it. Simple trade."
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_dampers",
+      "text": "[chuckling low in the chest, mischief in the burr] Without inertial dampers, our wee course corrections would spread you across the aft bulkhead like marmalade. You're welcome, by the way."
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_hullsong",
+      "text": "[rough voice gone unexpectedly soft] Put your palm on the armrest — feel the wee vibration? Every ship has a heartbeat. Machines built with love always do."
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_tea",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] The replicators make four thousand beverages. The crew orders tea, cocoa, and something the Titan crowd calls 'methane fizz'. I don't ask. Engineering is about knowing which questions to skip."
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_apprentice",
+      "text": "[chuckling low in the chest, mischief in the burr] My newest apprentice grew up on Ceres and had never seen rain until Earth shore leave. Stood in a storm for three hours, grinning like a hatch left open. We build ships so people can have moments like that."
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_maintenance",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] Folk romanticize exploration. Fine. But somebody greases the gimbals. Heroism is mostly maintenance done on time — remember that about civilizations, too."
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_charts",
+      "text": "[warm, smiling through the words, easy captain’s confidence] My charts hold four hundred billion stars, and we've visited a few thousand. I don't call that discouraging. I call it job security for every child who ever pointed up."
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_lostships",
+      "text": "[quiet reflection, a captain thinking aloud] Old sailors navigated by stars they'd never touch. We touch them now, and navigate by ones we haven't. May we never run out of farther."
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_passengers",
+      "text": "[warm, smiling through the words, easy captain’s confidence] I've flown diplomats, poets, and a nine-year-old who corrected my orbital mechanics. She was right, too. Command means knowing when the future is sitting in the cheap seats."
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_earthrise",
+      "text": "[soft and almost private, savoring the moment] First thing every cadet learns: however far you fly, you navigate by where home is. Some instruments are made of brass. The important one isn't."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_exoplanets",
+      "text": "[thrilled, words tumbling faster, barely containing a grin] We've catalogued over two million exoplanets now. Deserts, ocean worlds, planets of molten rock — and still, nowhere quite like the blue original. Rarity is a kind of instruction."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_goldrecord",
+      "text": "[gentle and thoughtful, slower cadence, letting it land] The old Voyagers still drift out there, carrying golden records of greetings and songs. A love letter with no address. We were hopeful even when we were poor. Especially then."
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_shieldmath",
+      "text": "[gruff Scottish burr, wry and half-grumbling, warm underneath] The deflectors nudge debris aside with shaped magnetic fields — a shove, not a wall. Brute force is for amateurs. Aim is for engineers."
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_quiet_bridge",
+      "text": "[warm, smiling through the words, easy captain’s confidence] A quiet bridge is a healthy bridge. Alarms mean surprises, and I've spent a whole career arranging for the universe to surprise only our guests, never my crew."
+    }
+  ],
+  "boot": {
+    "role": "NAVIGATION",
+    "clip": "boot_welcome",
+    "text": "[bright, welcoming, a captain proud of her ship] Welcome to X3 Galaxy Sim — Project Pale Blue. [warm] That's her outside the glass: your ship, docked at Earth Station Aurora. [easy, instructional] Single-tap the right temple to fasten your seatbelt and board. Look around freely — the tour guides itself. [playful] Double-tap anytime for settings. [soft smile] Whenever you're ready, traveler."
+  },
+  "events": {
+    "near_miss": [
+      [
+        {
+          "d": 0,
+          "role": "NAVIGATION",
+          "clip": "evt_nm1_a",
+          "text": "[sharp bark, instant command] Contact! Rogue hauler crossing our bow — brace! Helm, pitch down NOW!"
+        },
+        {
+          "d": 6000,
+          "role": "ENGINEERING",
+          "clip": "evt_nm1_b",
+          "text": "[shouting over the klaxon, half furious half thrilled] Their nav transponder's dark! That heap of containers missed us by a coat of paint!"
+        },
+        {
+          "d": 13000,
+          "role": "SCIENCE",
+          "clip": "evt_nm1_c",
+          "text": "[exhaling, dry humor returning] For the record: space is very large. Statistically, that should not have been possible. [beat] I intend to have words with statistics."
+        }
+      ],
+      [
+        {
+          "d": 0,
+          "role": "NAVIGATION",
+          "clip": "evt_nm2_a",
+          "text": "[urgent, clipped] Proximity alarm — unpiloted freight drone, dead ahead and drifting! Evasive starboard, hold on!"
+        },
+        {
+          "d": 7000,
+          "role": "ENGINEERING",
+          "clip": "evt_nm2_b",
+          "text": "[gritted teeth easing into a growl] Cleared it. Deflectors kissed its wake — that's as close as I ever want to dance with forty thousand tons of scrap."
+        },
+        {
+          "d": 14000,
+          "role": "NAVIGATION",
+          "clip": "evt_nm2_c",
+          "text": "[steadying, warm again] All clear, everyone. Traffic control has the drone flagged. Breathe — the tour continues."
+        }
+      ]
+    ],
+    "engine_trouble": [
+      [
+        {
+          "d": 0,
+          "role": "ENGINEERING",
+          "clip": "evt_eng1_a",
+          "text": "[alarm in the burr, fast] Captain — port injector's sputtering! Warp field's sagging, I'm losing containment symmetry!"
+        },
+        {
+          "d": 8000,
+          "role": "NAVIGATION",
+          "clip": "evt_eng1_b",
+          "text": "[calm command under pressure] Understood. Dropping to cruise. Chief, you have the deck lights and my patience — fix her."
+        },
+        {
+          "d": 16000,
+          "role": "ENGINEERING",
+          "clip": "evt_eng1_c",
+          "text": "[muttering, working, tools clinking in the voice] Re-seating the constrictor... come on, lass, sing for me... [triumphant bark of a laugh] THERE she is! Field's green, Captain. Never doubted her. Much."
+        },
+        {
+          "d": 25000,
+          "role": "SCIENCE",
+          "clip": "evt_eng1_d",
+          "text": "[gently amused] For our guest: that flickering was four hundred terawatts deciding whether to behave. It chose wisely."
+        }
+      ],
+      [
+        {
+          "d": 0,
+          "role": "ENGINEERING",
+          "clip": "evt_eng2_a",
+          "text": "[strained, urgent] Coolant pressure just fell off a cliff — number two nacelle's running hot! Throttling back before she scorches!"
+        },
+        {
+          "d": 9000,
+          "role": "SCIENCE",
+          "clip": "evt_eng2_b",
+          "text": "[measured, reassuring] Thermal load is within tolerance for another ninety seconds. Chief, the backup loop on deck four is still cold — reroute through it."
+        },
+        {
+          "d": 17000,
+          "role": "ENGINEERING",
+          "clip": "evt_eng2_c",
+          "text": "[relieved growl, wiping metaphorical sweat] Rerouted. Temperature's falling. [chuckle] Good catch, Doctor — I owe you a dram of the Martian stuff. The bad bottle."
+        }
+      ]
+    ],
+    "debris_strike": [
+      [
+        {
+          "d": 0,
+          "role": "ENGINEERING",
+          "clip": "evt_deb1_a",
+          "text": "[jolted, barking] Impact! Micrometeoroid swarm on the port quarter — shields drank it, but that one RANG the hull!"
+        },
+        {
+          "d": 8000,
+          "role": "SCIENCE",
+          "clip": "evt_deb1_b",
+          "text": "[quick, fascinated despite the alarm] Fragments of an old comet, by the spectrum. Four-billion-year-old ice, annoyed that we were in its way. The feeling is mutual."
+        },
+        {
+          "d": 15000,
+          "role": "NAVIGATION",
+          "clip": "evt_deb1_c",
+          "text": "[warm, steady] Shields regenerating. That rattle you felt is why we never fly without them, friends."
+        }
+      ]
+    ],
+    "alien": [
+      [
+        {
+          "d": 0,
+          "role": "NAVIGATION",
+          "clip": "evt_al1_a",
+          "text": "[hard, urgent, dropping all warmth] Unknown contact — fast mover, no transponder, intercept vector! All hands, stations. Guest, you are safe — watch the dark shape circling us. THAT is our visitor."
+        },
+        {
+          "d": 6500,
+          "role": "SCIENCE",
+          "clip": "evt_al1_b",
+          "text": "[racing, awed and afraid at once] Hull geometry matches nothing in the registry — organic curves, green drive emissions... Captain, this was not built by anyone we have ever met."
+        },
+        {
+          "d": 12000,
+          "role": "ENGINEERING",
+          "clip": "evt_al1_c",
+          "text": "[roaring over impacts] Energy discharges splashing off the deflectors! Shields holding — they're probing us, testing the fence!"
+        },
+        {
+          "d": 17500,
+          "role": "NAVIGATION",
+          "clip": "evt_al1_neg1",
+          "text": "[controlled, then formal — every word placed like a stone] Weapons stay COLD. Open all channels, every band, mathematics first. [broadcasting, slow and clear] Unknown vessel: this is Captain Idris Vale of the civilian ship Pale Blue. We carry travelers and questions — nothing else. We would rather talk than flinch."
+        },
+        {
+          "d": 26000,
+          "role": "SCIENCE",
+          "clip": "evt_al1_neg2",
+          "text": "[breathless] Captain — the firing has stopped. They're... echoing your transmission back. Prime numbers. Two, three, five, seven. [rising wonder] They're answering in the only language we both own."
+        },
+        {
+          "d": 33000,
+          "role": "NAVIGATION",
+          "clip": "evt_al1_neg3",
+          "text": "[quiet, historic] Then we answer back: eleven, thirteen. [beat] Log the exchange. Peace, on the first try — because somebody chose to say hello instead of goodbye."
+        },
+        {
+          "d": 40000,
+          "role": "SCIENCE",
+          "clip": "evt_al1_e",
+          "text": "[shaken, wonder winning] It's breaking off — running lights flashing a pattern... I think that's a farewell. First contact, logged and PEACEFUL. [soft] One day we'll know what they wanted. Today it was enough not to be enemies."
+        }
+      ],
+      [
+        {
+          "d": 0,
+          "role": "SCIENCE",
+          "clip": "evt_al2_a",
+          "text": "[whisper rising to urgent] Captain — my sensor ghost is back, it's REAL, and it is very fast. Dark hull, green emissions — look for it crossing the starfield, there, circling!"
+        },
+        {
+          "d": 6000,
+          "role": "NAVIGATION",
+          "clip": "evt_al2_b",
+          "text": "[ice-calm command] Shields to maximum, weapons to NOTHING. We are a ship full of tourists and we will act like the civilization we claim to be. Get me a channel."
+        },
+        {
+          "d": 12500,
+          "role": "ENGINEERING",
+          "clip": "evt_al2_c",
+          "text": "[grim burr] Taking glancing fire — green as sin, deflectors at eighty! Whatever you're going to say, Captain, say it soon!"
+        },
+        {
+          "d": 18000,
+          "role": "NAVIGATION",
+          "clip": "evt_al2_neg1",
+          "text": "[broadcasting, steady as bedrock] Unknown craft, Pale Blue actual. We answer fire with hydrogen line frequencies and open hands. Our species learned the hard way that shooting first is how you murder a future. [beat] Not today. Talk to us."
+        },
+        {
+          "d": 27000,
+          "role": "SCIENCE",
+          "clip": "evt_al2_neg2",
+          "text": "[hushed disbelief] Weapons cold... it's matching our velocity. Painting us with soft sensors only — like a hand held out. [moved] Captain, I believe you just negotiated humanity's second peace with them."
+        },
+        {
+          "d": 35000,
+          "role": "NAVIGATION",
+          "clip": "evt_al2_d",
+          "text": "[slow exhale, wonder creeping in] And there it goes. Every photon logged for the xenolinguists. [warm, to the guest] You just watched diplomacy work at light speed, friend. That's the whole trick: we stopped flinching first."
+        }
+      ]
+    ],
+    "ally": [
+      {
+        "name": "CNSA heavy cruiser Zheng He",
+        "seed": 0,
+        "lines": [
+          {
+            "d": 0,
+            "role": "NAVIGATION",
+            "clip": "evt_ally_cnsa_a",
+            "text": "[relief breaking through] Incoming hail — CNSA heavy cruiser Zheng He, out of Tiangong-Gao: 'Pale Blue, we saw your telemetry spike. Hold formation, we have your flank.' [warm] Understood, Zheng He — and thank you."
+          },
+          {
+            "d": 12000,
+            "role": "ENGINEERING",
+            "clip": "evt_ally_cnsa_b",
+            "text": "[admiring whistle in the burr] Look at the SIZE of her... Chinese fusion engineering, that hull. They build them like mountains that decided to fly."
+          }
+        ]
+      },
+      {
+        "name": "ESA rescue tug Amundsen",
+        "seed": 1,
+        "lines": [
+          {
+            "d": 0,
+            "role": "NAVIGATION",
+            "clip": "evt_ally_esa_a",
+            "text": "[grateful, formal] Hail from the ESA rescue tug Amundsen: 'Pale Blue, pan-European service vessel standing by with repair drones and very good coffee.' [chuckle] Europe never changes. Alongside, Amundsen."
+          },
+          {
+            "d": 11000,
+            "role": "SCIENCE",
+            "clip": "evt_ally_esa_b",
+            "text": "[warm, reflective] A century ago their agencies competed for launch pads. Now there's a rescue tug on permanent patrol between here and Mars. That's what Type One actually means."
+          }
+        ]
+      },
+      {
+        "name": "ISRO carrier Vikram",
+        "seed": 2,
+        "lines": [
+          {
+            "d": 0,
+            "role": "NAVIGATION",
+            "clip": "evt_ally_isro_a",
+            "text": "[bright with relief] The ISRO carrier Vikram is vectoring in — fighter screen deploying: 'Pale Blue, India has the watch. Nothing touches you on our shift.' [firm] Good hunting, Vikram."
+          },
+          {
+            "d": 12000,
+            "role": "ENGINEERING",
+            "clip": "evt_ally_isro_b",
+            "text": "[approving growl] Frugal engineering, they used to sneer. Aye — frugal like a scalpel. Watch those interceptors fly, and take notes."
+          }
+        ]
+      },
+      {
+        "name": "JAXA science frigate Hayabusa III",
+        "seed": 3,
+        "lines": [
+          {
+            "d": 0,
+            "role": "NAVIGATION",
+            "clip": "evt_ally_jaxa_a",
+            "text": "[pleasantly surprised] JAXA science frigate Hayabusa III on approach: 'Pale Blue-san, our sensor net is yours. We watch together.' [warm] An honor, Hayabusa. Welcome to the formation."
+          },
+          {
+            "d": 11000,
+            "role": "SCIENCE",
+            "clip": "evt_ally_jaxa_b",
+            "text": "[delighted] The Hayabusa line once brought home grams of asteroid. Now their descendants shepherd starships. Patience, compounded over a century, looks exactly like this."
+          }
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "LUNA": {
+      "role": "NAVIGATION",
+      "clip": "arr_luna",
+      "text": "[warm, announcing] Waypoint reached: Luna. Eyes forward, center window — that grey pearl growing dead ahead is the Moon, our first stop."
+    },
+    "VENUS": {
+      "role": "NAVIGATION",
+      "clip": "arr_venus",
+      "text": "[warm] Arrival: Venus. Look straight ahead — the blinding white marble in the center of your view. That glare is sunlight on a permanent global cloud deck."
+    },
+    "SOL PERIHELION": {
+      "role": "NAVIGATION",
+      "clip": "arr_sol",
+      "text": "[commanding, hushed] Waypoint: perihelion. Look ahead — that wall of fire filling the window is the Sun itself. The shimmer at the edges is our shielding at work."
+    },
+    "MARS": {
+      "role": "NAVIGATION",
+      "clip": "arr_mars",
+      "text": "[warm] Arrival: Mars. Dead ahead — the rust-red disc with the white polar cap. Those two sparks beside it are its moons, Phobos and Deimos."
+    },
+    "ASTEROID BELT": {
+      "role": "NAVIGATION",
+      "clip": "arr_belt",
+      "text": "[easy] Now entering the main asteroid belt. Watch the middle distance ahead — the slow-tumbling shapes catching sunlight are rocks older than any world."
+    },
+    "JUPITER": {
+      "role": "NAVIGATION",
+      "clip": "arr_jupiter",
+      "text": "[awe creeping in] Waypoint: Jupiter. Straight ahead and impossible to miss — the banded giant. Find the red oval below its equator: a storm wider than Earth."
+    },
+    "JOVIAN MOONS": {
+      "role": "NAVIGATION",
+      "clip": "arr_jovian",
+      "text": "[warm] Threading the Galilean moons now. Sulfur-yellow Io ahead on the left of the giant, ice-white Europa lower right. Worlds, orbiting a world."
+    },
+    "SATURN RINGS": {
+      "role": "NAVIGATION",
+      "clip": "arr_saturn",
+      "text": "[quiet delight] Arrival: Saturn. Center window — and take your time. The rings you're seeing ahead are real, and in a moment we will be inside them."
+    },
+    "TITAN": {
+      "role": "NAVIGATION",
+      "clip": "arr_titan",
+      "text": "[warm] Waypoint: Titan. The orange sphere ahead is a moon wearing a thicker atmosphere than Earth's. Nothing else in the solar system looks like this."
+    },
+    "URANUS": {
+      "role": "NAVIGATION",
+      "clip": "arr_uranus",
+      "text": "[measured] Arrival: Uranus. Ahead — the pale cyan globe lying on its side. Note how dim the light is now; the Sun is a bright star behind us."
+    },
+    "NEPTUNE": {
+      "role": "NAVIGATION",
+      "clip": "arr_neptune",
+      "text": "[soft awe] Waypoint: Neptune. That deep, impossible blue dead ahead is the last giant. The bright speck beside it is Triton, its captured moon."
+    },
+    "PLUTO": {
+      "role": "NAVIGATION",
+      "clip": "arr_pluto",
+      "text": "[tender] Arrival: Pluto. Look ahead — small, ochre, patient. The pale region on its face is the heart glacier. Its twin Charon rides just beside it."
+    },
+    "KUIPER BELT": {
+      "role": "NAVIGATION",
+      "clip": "arr_kuiper",
+      "text": "[easy] Now crossing the Kuiper Belt. The icy tumbling shapes drifting past ahead are leftovers from the solar system's construction site."
+    },
+    "HELIOPAUSE": {
+      "role": "NAVIGATION",
+      "clip": "arr_helio",
+      "text": "[quiet, marking the moment] Waypoint: the heliopause. Nothing to see ahead but darkness — and that's the point. You are watching the Sun's weather end."
+    },
+    "INTERSTELLAR": {
+      "role": "NAVIGATION",
+      "clip": "arr_inter",
+      "text": "[commanding, alive] Interstellar space. Watch the stars ahead run blue and the wake behind burn red as we crowd light-speed. That color is velocity."
+    },
+    "ORION NEBULA": {
+      "role": "NAVIGATION",
+      "clip": "arr_orion",
+      "text": "[hushed] Arrival: the Orion Nebula. Fill your eyes — the glowing cloud ahead is twenty-four light-years of star nursery. Every bright knot is a sun being born."
+    },
+    "TRAPPIST-1": {
+      "role": "NAVIGATION",
+      "clip": "arr_trappist",
+      "text": "[warm] Waypoint: TRAPPIST-1. The ember-red star ahead is barely bigger than Jupiter — and the pinpoints huddled around it are seven rocky worlds."
+    },
+    "HD 189733 b": {
+      "role": "NAVIGATION",
+      "clip": "arr_hd",
+      "text": "[wry warning] Arrival: HD 189733 b. The gorgeous cobalt marble ahead is the most beautiful liar in the catalog. Admire it. Do not trust it."
+    },
+    "GALACTIC CORE TRANSIT": {
+      "role": "NAVIGATION",
+      "clip": "arr_core",
+      "text": "[awe] Now crossing the galactic core. Look anywhere ahead — the sky itself has turned to embers. A million stars for every one you knew at home."
+    },
+    "SAGITTARIUS A*": {
+      "role": "NAVIGATION",
+      "clip": "arr_sgra",
+      "text": "[low, deliberate] Waypoint: Sagittarius A*. Center window. The place where the starfield bends and goes dark — that circle of nothing is the black hole. Hold steady."
+    },
+    "THE LOOK BACK": {
+      "role": "NAVIGATION",
+      "clip": "arr_lookback",
+      "text": "[gentle] Final waypoint. We've come about — look dead ahead into the dark. That faint river of light is the Milky Way. Home is inside it."
+    }
+  },
+  "chronicle": [
+    {
+      "role": "SCIENCE",
+      "clip": "chr_01",
+      "text": "[settling in, storyteller's warmth] Since we have a quiet stretch — let me tell you how we actually got here. Not the engines. The harder part. [beat] It begins with a species that spent ten thousand years practicing every cruelty on itself, and then — slowly, unevenly — chose to stop."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_02",
+      "text": "[measured] For most of history, a few owned the land and the many worked it and died on it. Feudalism, serfdom, slavery — different names for one idea: that some lives exist for the convenience of others. [quiet steel] The first revolution wasn't a machine. It was the heresy that no one is born to kneel."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_03",
+      "text": "[reflective] Empires industrialized that old cruelty — colonies stripped, peoples priced like cargo. The ledgers balanced beautifully and the world did not. [gentle] Undoing it took centuries of resistance by the exploited themselves. Progress was never given. It was insisted upon."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_04",
+      "text": "[professorial, even-handed] The market age built miracles — vaccines, computers, this hull's ancestors — while burning its own future for quarterly returns. Its great flaw wasn't ambition. It was that it priced everything except what mattered: air, ice, childhood, truth."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_05",
+      "text": "[somber, factual] And so the sky itself became the bill. The warming century: drowned deltas, burned forests, a hundred million people walking away from coastlines their grandmothers loved. [beat] We had every warning. A scientist named Carl Sagan gave one of the clearest, in 1985, to a room of politicians who applauded and did nothing."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_06",
+      "text": "[low, unflinching] The pressure found the fault line. The Third World War began the way he'd feared — not with a decision, but with a cascade: water wars, grid attacks, alliances falling like dominoes. Two hundred hours of automated escalation. [quiet] We do not name the cities. We hold one minute of silence every year instead, planetwide. Even out here."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_07",
+      "text": "[the turn, warmth returning] What stopped it wasn't a victory. Victory had become meaningless. It was mutiny — launch officers on three continents, strangers to each other, who each looked at their own key and independently said no. [moved] The armistice was signed by exhausted generals, but it was written by their refusal."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_08",
+      "text": "[building] The survivors made the pact that built this ship's world: never again one button, one man, one fever-dream of flags. Weapons went under planetary trust. And the arsenals' budgets — trillions a year that had bought extinction on layaway — went to the grid instead."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_09",
+      "text": "[brightening] That was the pivot: energy. Orbital solar, fusion, the elevators you saw at Earth. When power became too cheap to hoard, scarcity stopped being an economy and became an engineering problem. Food, medicine, shelter — solved not by charity, but by capacity. Post-scarcity isn't utopia. It's plumbing, done right, for everyone."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_10",
+      "text": "[gentle] With scarcity went most of war's reasons, and with the reckoning went most of its romance. Exploitation didn't vanish by decree — it starved, because desperate people are exploitable and we simply ran out of desperate people. [dry] Turns out the cheapest defense budget in history is a fed, schooled, unafraid humanity."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_11",
+      "text": "[reverent] Through all of it, one photograph kept being reprinted: a grainy frame from 1990, Earth as a pale blue dot in a sunbeam, taken by a probe at Sagan's request. He asked us to really look at it — every saint and tyrant, every war fought over a fraction of a pixel. [soft] After the war, they printed it on the armistice itself."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_12",
+      "text": "[warm conviction] Sagan taught that science is more than knowledge — it's a way of thinking that doesn't flinch: show your evidence, cherish your doubts, change your mind in public. We made that the core of every school on four worlds. Not what to think. How. A candle, he called it, against the dark — we wired the candle into the curriculum."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_13",
+      "text": "[honest, leaning in] I won't lie to you — we are not finished. There are still grudges, still greed, still committees. [chuckle] Eternal vigilance turned out to apply to everything. But the difference is structural now: no one profits from a stranger's hunger, and no one, anywhere, can end the story alone."
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_14",
+      "text": "[quiet finale of the tale] So when you look at this crew — a captain, an engineer, a scientist, flying strangers across the galaxy for the joy of it — you're looking at the dividend of every refusal, every mutiny of conscience, every teacher who held the candle. [tender] Preserve and cherish the pale blue dot, he said. It's the only home we've ever known. [beat] We finally listened. And then we built more homes — without ever letting go of the first."
+    }
+  ]
+}
