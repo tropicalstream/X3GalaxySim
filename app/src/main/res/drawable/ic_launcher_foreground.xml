@@ -1,0 +1,50 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+
+    <!-- ring, back half (behind the planet) -->
+    <group android:rotation="-18" android:pivotX="54" android:pivotY="57">
+        <path android:pathData="M27,57 a27,8.5 0 0,1 54,0"
+            android:strokeColor="#5A8FBF" android:strokeWidth="3.2" android:strokeAlpha="0.55" />
+    </group>
+
+    <!-- the planet: pale blue with gradient limb -->
+    <path android:pathData="M54,57 m-17,0 a17,17 0 1,1 34,0 a17,17 0 1,1 -34,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="42" android:startY="43"
+                android:endX="66" android:endY="72">
+                <item android:offset="0.0" android:color="#FFAEDCF5" />
+                <item android:offset="0.45" android:color="#FF4E9BD8" />
+                <item android:offset="1.0" android:color="#FF16406E" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- terminator shadow -->
+    <path android:pathData="M54,57 m-17,0 a17,17 0 1,1 34,0 a17,17 0 1,1 -34,0"
+        android:fillColor="#33000814" />
+    <!-- specular highlight -->
+    <path android:pathData="M46,47 m-6,0 a6,6 0 1,1 12,0 a6,6 0 1,1 -12,0"
+        android:fillColor="#40FFFFFF" />
+
+    <!-- ring, front half (over the planet) -->
+    <group android:rotation="-18" android:pivotX="54" android:pivotY="57">
+        <path android:pathData="M27,57 a27,8.5 0 0,0 54,0"
+            android:strokeColor="#BFE2FF" android:strokeWidth="3.6" android:strokeAlpha="0.95" />
+    </group>
+
+    <!-- ship swoosh: orbit arc + tiny craft -->
+    <path android:pathData="M20,78 Q54,96 88,70"
+        android:strokeColor="#7FE8D8" android:strokeWidth="2" android:strokeAlpha="0.8"
+        android:strokeLineCap="round" />
+    <path android:fillColor="#EFFFFFFF"
+        android:pathData="M86,70 l6,-2.4 l-4.4,4.8 l-0.4,-1 z" />
+
+    <!-- four-point star sparkle, upper right -->
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M79,30 l1.6,4.6 l4.6,1.6 l-4.6,1.6 l-1.6,4.6 l-1.6,-4.6 l-4.6,-1.6 l4.6,-1.6 z" />
+    <path android:fillColor="#80FFFFFF"
+        android:pathData="M30,34 l1,2.8 l2.8,1 l-2.8,1 l-1,2.8 l-1,-2.8 l-2.8,-1 l2.8,-1 z" />
+</vector>

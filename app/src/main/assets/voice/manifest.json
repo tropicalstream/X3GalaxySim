@@ -1,0 +1,1784 @@
+{
+  "format": "ProjectPaleBlueVoiceManifest/v1",
+  "generated_at_unix": 1782967658,
+  "model_chain": [
+    "s2.1-pro",
+    "s2.1-pro-free",
+    "s2-pro"
+  ],
+  "voice_ids": {
+    "NAVIGATION": "b23ef1b2cb894e73837493c6842b48f0",
+    "SCIENCE": "beeeb0dc7749411fa53e556bd9150a9b",
+    "ENGINEERING": "dfc631ce584b4f759e5d8639c89b56d7"
+  },
+  "clips": [
+    {
+      "role": "NAVIGATION",
+      "clip": "welcome",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/welcome.ogg",
+      "bytes": 429157
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "preflight_core",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/preflight_core.ogg",
+      "bytes": 234388
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "preflight_view",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/preflight_view.ogg",
+      "bytes": 326673
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "type1_intro",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/type1_intro.ogg",
+      "bytes": 288172
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "type1_arrays",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/type1_arrays.ogg",
+      "bytes": 375346
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "type1_elevators",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/type1_elevators.ogg",
+      "bytes": 259592
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "type1_climate",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/type1_climate.ogg",
+      "bytes": 393200
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "countdown",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/countdown.ogg",
+      "bytes": 237779
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "ignition",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/ignition.ogg",
+      "bytes": 253448
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "leaving_earth",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/leaving_earth.ogg",
+      "bytes": 255603
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "leo_traffic",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/leo_traffic.ogg",
+      "bytes": 380146
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "night_lights",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/night_lights.ogg",
+      "bytes": 391810
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "grav_comfort",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/grav_comfort.ogg",
+      "bytes": 327701
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "course_moon",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/course_moon.ogg",
+      "bytes": 370583
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "moon_birth",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/moon_birth.ogg",
+      "bytes": 436644
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "moon_craters",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/moon_craters.ogg",
+      "bytes": 220085
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "moon_helium",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/moon_helium.ogg",
+      "bytes": 301144
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "moon_farside",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/moon_farside.ogg",
+      "bytes": 340634
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "moon_footprints",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/moon_footprints.ogg",
+      "bytes": 296847
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "course_venus",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/course_venus.ogg",
+      "bytes": 237788
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "sunward_prep",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/sunward_prep.ogg",
+      "bytes": 267759
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "venus_approach",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/venus_approach.ogg",
+      "bytes": 419621
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "venus_warning",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/venus_warning.ogg",
+      "bytes": 381087
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "venus_clouds",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/venus_clouds.ogg",
+      "bytes": 341998
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "venus_cloudcities",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/venus_cloudcities.ogg",
+      "bytes": 357702
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "venus_terraform",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/venus_terraform.ogg",
+      "bytes": 422365
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "sun_course",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/sun_course.ogg",
+      "bytes": 260926
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "sun_shields_up",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/sun_shields_up.ogg",
+      "bytes": 267831
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "sun_scale",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/sun_scale.ogg",
+      "bytes": 538939
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "sun_fusion",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/sun_fusion.ogg",
+      "bytes": 474794
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "sun_temp_read",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/sun_temp_read.ogg",
+      "bytes": 269128
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "sun_flare_hit",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/sun_flare_hit.ogg",
+      "bytes": 283565
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "sun_corona",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/sun_corona.ogg",
+      "bytes": 397137
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "sun_perihelion",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/sun_perihelion.ogg",
+      "bytes": 412809
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "sun_dyson",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/sun_dyson.ogg",
+      "bytes": 537942
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "sun_power_home",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/sun_power_home.ogg",
+      "bytes": 357682
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "sun_death",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/sun_death.ogg",
+      "bytes": 341996
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "sun_depart",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/sun_depart.ogg",
+      "bytes": 324264
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "inverse_square",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/inverse_square.ogg",
+      "bytes": 408024
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "shields_stow",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/shields_stow.ogg",
+      "bytes": 275260
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "mercury_mention",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/mercury_mention.ogg",
+      "bytes": 400550
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "mars_ahead",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/mars_ahead.ogg",
+      "bytes": 331086
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "mars_water",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/mars_water.ogg",
+      "bytes": 515774
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "mars_domes",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/mars_domes.ogg",
+      "bytes": 351535
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "mars_terraform",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/mars_terraform.ogg",
+      "bytes": 410094
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "mars_moons",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/mars_moons.ogg",
+      "bytes": 391020
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "belt_enter",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/belt_enter.ogg",
+      "bytes": 341985
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "belt_pebble",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/belt_pebble.ogg",
+      "bytes": 324298
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "belt_ceres",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/belt_ceres.ogg",
+      "bytes": 403279
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "belt_mining",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/belt_mining.ogg",
+      "bytes": 446369
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "belt_shipyards",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/belt_shipyards.ogg",
+      "bytes": 286831
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "jupiter_course",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/jupiter_course.ogg",
+      "bytes": 412796
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "jupiter_scale",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/jupiter_scale.ogg",
+      "bytes": 501595
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "jupiter_radiation",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/jupiter_radiation.ogg",
+      "bytes": 406708
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "jupiter_shield_hits",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/jupiter_shield_hits.ogg",
+      "bytes": 345117
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "jupiter_spot",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/jupiter_spot.ogg",
+      "bytes": 441411
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "jupiter_shepherd",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/jupiter_shepherd.ogg",
+      "bytes": 357654
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "jupiter_metallic",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/jupiter_metallic.ogg",
+      "bytes": 479551
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "jovian_moons_intro",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/jovian_moons_intro.ogg",
+      "bytes": 391021
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "io_volcanoes",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/io_volcanoes.ogg",
+      "bytes": 402317
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "europa_ocean",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/europa_ocean.ogg",
+      "bytes": 610570
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "europa_protocol",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/europa_protocol.ogg",
+      "bytes": 351539
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "saturn_course",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/saturn_course.ogg",
+      "bytes": 412805
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "saturn_rings_intro",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/saturn_rings_intro.ogg",
+      "bytes": 500265
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "rings_thread",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/rings_thread.ogg",
+      "bytes": 397147
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "rings_ice_taps",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/rings_ice_taps.ogg",
+      "bytes": 417025
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "rings_young",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/rings_young.ogg",
+      "bytes": 443449
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "saturn_density",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/saturn_density.ogg",
+      "bytes": 479544
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "rings_shadow",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/rings_shadow.ogg",
+      "bytes": 256848
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "titan_approach",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/titan_approach.ogg",
+      "bytes": 346741
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "titan_lakes",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/titan_lakes.ogg",
+      "bytes": 477180
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "titan_fuel",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/titan_fuel.ogg",
+      "bytes": 440081
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "titan_life_question",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/titan_life_question.ogg",
+      "bytes": 412841
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "uranus_course",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/uranus_course.ogg",
+      "bytes": 301116
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "uranus_tilt",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/uranus_tilt.ogg",
+      "bytes": 550358
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "uranus_cold",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/uranus_cold.ogg",
+      "bytes": 533352
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "uranus_diamonds",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/uranus_diamonds.ogg",
+      "bytes": 415074
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "neptune_approach",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/neptune_approach.ogg",
+      "bytes": 501349
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "neptune_winds",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/neptune_winds.ogg",
+      "bytes": 585446
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "neptune_triton",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/neptune_triton.ogg",
+      "bytes": 541297
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "neptune_outpost",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/neptune_outpost.ogg",
+      "bytes": 386257
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "pluto_course",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/pluto_course.ogg",
+      "bytes": 341334
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "pluto_heart",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/pluto_heart.ogg",
+      "bytes": 609045
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "pluto_binary",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/pluto_binary.ogg",
+      "bytes": 514291
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "kuiper_enter",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/kuiper_enter.ogg",
+      "bytes": 525197
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "kuiper_comets",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/kuiper_comets.ogg",
+      "bytes": 447572
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "heliopause_intro",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/heliopause_intro.ogg",
+      "bytes": 572844
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "heliopause_cross",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/heliopause_cross.ogg",
+      "bytes": 412794
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "warp_prep",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/warp_prep.ogg",
+      "bytes": 395796
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "warp_order",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/warp_order.ogg",
+      "bytes": 420976
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "doppler_explain",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/doppler_explain.ogg",
+      "bytes": 473312
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "time_dilation",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/time_dilation.ogg",
+      "bytes": 456094
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "warp_hum",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/warp_hum.ogg",
+      "bytes": 368565
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "orion_course",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/orion_course.ogg",
+      "bytes": 479548
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "orion_arrival",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/orion_arrival.ogg",
+      "bytes": 467461
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "orion_nursery",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/orion_nursery.ogg",
+      "bytes": 544248
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "orion_trapezium",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/orion_trapezium.ogg",
+      "bytes": 496569
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "orion_dust",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/orion_dust.ogg",
+      "bytes": 309985
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "orion_disks",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/orion_disks.ogg",
+      "bytes": 540707
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "orion_protostar",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/orion_protostar.ogg",
+      "bytes": 455732
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "orion_elements",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/orion_elements.ogg",
+      "bytes": 574993
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "trappist_course",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/trappist_course.ogg",
+      "bytes": 478190
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "trappist_arrival",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/trappist_arrival.ogg",
+      "bytes": 553839
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "trappist_ezone",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/trappist_ezone.ogg",
+      "bytes": 452313
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "trappist_tidelock",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/trappist_tidelock.ogg",
+      "bytes": 461867
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "trappist_probes",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/trappist_probes.ogg",
+      "bytes": 556634
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "hd_course",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/hd_course.ogg",
+      "bytes": 601451
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "hd_glass_rain",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/hd_glass_rain.ogg",
+      "bytes": 393195
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "hd_evasive",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/hd_evasive.ogg",
+      "bytes": 355688
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "hd_lesson",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/hd_lesson.ogg",
+      "bytes": 450959
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "core_course",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/core_course.ogg",
+      "bytes": 417559
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "core_starfield",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/core_starfield.ogg",
+      "bytes": 508311
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "core_nerves",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/core_nerves.ogg",
+      "bytes": 398605
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "sgra_intro",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/sgra_intro.ogg",
+      "bytes": 545625
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "sgra_lensing",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/sgra_lensing.ogg",
+      "bytes": 568938
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "sgra_stress",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/sgra_stress.ogg",
+      "bytes": 400613
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "sgra_helm",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/sgra_helm.ogg",
+      "bytes": 353680
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "sgra_periapsis",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/sgra_periapsis.ogg",
+      "bytes": 552552
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "sgra_time",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/sgra_time.ogg",
+      "bytes": 658170
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "sgra_escape",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/sgra_escape.ogg",
+      "bytes": 313363
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "sgra_report",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/sgra_report.ogg",
+      "bytes": 397175
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "lookback_maneuver",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/lookback_maneuver.ogg",
+      "bytes": 564681
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "pale_blue_monologue",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/pale_blue_monologue.ogg",
+      "bytes": 1887908
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "ride_end",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/ride_end.ogg",
+      "bytes": 387611
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_atoms",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_atoms.ogg",
+      "bytes": 319507
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_photons",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_photons.ogg",
+      "bytes": 269172
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_vacuum",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_vacuum.ogg",
+      "bytes": 379545
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_scale",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_scale.ogg",
+      "bytes": 357992
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_darkmatter",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_darkmatter.ogg",
+      "bytes": 362426
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_life",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_life.ogg",
+      "bytes": 396088
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_math",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_math.ogg",
+      "bytes": 389633
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_water",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_water.ogg",
+      "bytes": 367187
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_type2",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_type2.ogg",
+      "bytes": 382961
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_silence",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_silence.ogg",
+      "bytes": 340217
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_antimatter",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/fill_antimatter.ogg",
+      "bytes": 380235
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_dampers",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/fill_dampers.ogg",
+      "bytes": 248698
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_hullsong",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/fill_hullsong.ogg",
+      "bytes": 247330
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_tea",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/fill_tea.ogg",
+      "bytes": 386271
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_apprentice",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/fill_apprentice.ogg",
+      "bytes": 371974
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_maintenance",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/fill_maintenance.ogg",
+      "bytes": 352882
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_charts",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/fill_charts.ogg",
+      "bytes": 368548
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_lostships",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/fill_lostships.ogg",
+      "bytes": 288183
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_passengers",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/fill_passengers.ogg",
+      "bytes": 346745
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_earthrise",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/fill_earthrise.ogg",
+      "bytes": 343456
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_exoplanets",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_exoplanets.ogg",
+      "bytes": 386809
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "fill_goldrecord",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/fill_goldrecord.ogg",
+      "bytes": 402027
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "fill_shieldmath",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/fill_shieldmath.ogg",
+      "bytes": 318167
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "fill_quiet_bridge",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/fill_quiet_bridge.ogg",
+      "bytes": 359012
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "boot_welcome",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/boot_welcome.ogg",
+      "bytes": 682184
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_nm1_a",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_nm1_a.ogg",
+      "bytes": 199645
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_nm1_b",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_nm1_b.ogg",
+      "bytes": 159589
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_nm1_c",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_nm1_c.ogg",
+      "bytes": 259580
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_nm2_a",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_nm2_a.ogg",
+      "bytes": 211993
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_nm2_b",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_nm2_b.ogg",
+      "bytes": 226206
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_nm2_c",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_nm2_c.ogg",
+      "bytes": 215300
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_eng1_a",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_eng1_a.ogg",
+      "bytes": 201024
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_eng1_b",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_eng1_b.ogg",
+      "bytes": 210537
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_eng1_c",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_eng1_c.ogg",
+      "bytes": 294322
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_eng1_d",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_eng1_d.ogg",
+      "bytes": 226197
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_eng2_a",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_eng2_a.ogg",
+      "bytes": 198412
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_eng2_b",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_eng2_b.ogg",
+      "bytes": 272509
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_eng2_c",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_eng2_c.ogg",
+      "bytes": 253452
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_deb1_a",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_deb1_a.ogg",
+      "bytes": 190926
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_deb1_b",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_deb1_b.ogg",
+      "bytes": 286816
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_deb1_c",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_deb1_c.ogg",
+      "bytes": 185347
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_al1_a",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_al1_a.ogg",
+      "bytes": 376387
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_al1_b",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_al1_b.ogg",
+      "bytes": 326646
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_al1_c",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_al1_c.ogg",
+      "bytes": 199658
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_al1_neg1",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_al1_neg1.ogg",
+      "bytes": 536747
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_al1_neg2",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_al1_neg2.ogg",
+      "bytes": 419617
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_al1_neg3",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_al1_neg3.ogg",
+      "bytes": 345376
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_al1_e",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_al1_e.ogg",
+      "bytes": 412878
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_al2_a",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_al2_a.ogg",
+      "bytes": 336779
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_al2_b",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_al2_b.ogg",
+      "bytes": 307253
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_al2_c",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_al2_c.ogg",
+      "bytes": 231062
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_al2_neg1",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_al2_neg1.ogg",
+      "bytes": 468654
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_al2_neg2",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_al2_neg2.ogg",
+      "bytes": 420978
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_al2_d",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_al2_d.ogg",
+      "bytes": 368535
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_ally_cnsa_a",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_ally_cnsa_a.ogg",
+      "bytes": 457070
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_ally_cnsa_b",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_ally_cnsa_b.ogg",
+      "bytes": 253454
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_ally_esa_a",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_ally_esa_a.ogg",
+      "bytes": 465246
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_ally_esa_b",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_ally_esa_b.ogg",
+      "bytes": 342004
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_ally_isro_a",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_ally_isro_a.ogg",
+      "bytes": 363780
+    },
+    {
+      "role": "ENGINEERING",
+      "clip": "evt_ally_isro_b",
+      "voice_id": "dfc631ce584b4f759e5d8639c89b56d7",
+      "model": "s2.1-pro",
+      "asset": "voice/engineering/evt_ally_isro_b.ogg",
+      "bytes": 258221
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "evt_ally_jaxa_a",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/evt_ally_jaxa_a.ogg",
+      "bytes": 375354
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "evt_ally_jaxa_b",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/evt_ally_jaxa_b.ogg",
+      "bytes": 351522
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_luna",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_luna.ogg",
+      "bytes": 327680
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_venus",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_venus.ogg",
+      "bytes": 345369
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_sol",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_sol.ogg",
+      "bytes": 331075
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_mars",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_mars.ogg",
+      "bytes": 346743
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_belt",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_belt.ogg",
+      "bytes": 301242
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_jupiter",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_jupiter.ogg",
+      "bytes": 372087
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_jovian",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_jovian.ogg",
+      "bytes": 324266
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_saturn",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_saturn.ogg",
+      "bytes": 313369
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_titan",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_titan.ogg",
+      "bytes": 319493
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_uranus",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_uranus.ogg",
+      "bytes": 346729
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_neptune",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_neptune.ogg",
+      "bytes": 366707
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_pluto",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_pluto.ogg",
+      "bytes": 409787
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_kuiper",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_kuiper.ogg",
+      "bytes": 280129
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_helio",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_helio.ogg",
+      "bytes": 278625
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_inter",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_inter.ogg",
+      "bytes": 313382
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_orion",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_orion.ogg",
+      "bytes": 368673
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_trappist",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_trappist.ogg",
+      "bytes": 331093
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_hd",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_hd.ogg",
+      "bytes": 357636
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_core",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_core.ogg",
+      "bytes": 342807
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_sgra",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_sgra.ogg",
+      "bytes": 408046
+    },
+    {
+      "role": "NAVIGATION",
+      "clip": "arr_lookback",
+      "voice_id": "b23ef1b2cb894e73837493c6842b48f0",
+      "model": "s2.1-pro",
+      "asset": "voice/navigation/arr_lookback.ogg",
+      "bytes": 288173
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_01",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_01.ogg",
+      "bytes": 561944
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_02",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_02.ogg",
+      "bytes": 593281
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_03",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_03.ogg",
+      "bytes": 587148
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_04",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_04.ogg",
+      "bytes": 549041
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_05",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_05.ogg",
+      "bytes": 745911
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_06",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_06.ogg",
+      "bytes": 761668
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_07",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_07.ogg",
+      "bytes": 606239
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_08",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_08.ogg",
+      "bytes": 545617
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_09",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_09.ogg",
+      "bytes": 766626
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_10",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_10.ogg",
+      "bytes": 627767
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_11",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_11.ogg",
+      "bytes": 757138
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_12",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_12.ogg",
+      "bytes": 631183
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_13",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_13.ogg",
+      "bytes": 559913
+    },
+    {
+      "role": "SCIENCE",
+      "clip": "chr_14",
+      "voice_id": "beeeb0dc7749411fa53e556bd9150a9b",
+      "model": "s2.1-pro",
+      "asset": "voice/science/chr_14.ogg",
+      "bytes": 890777
+    }
+  ]
+}
