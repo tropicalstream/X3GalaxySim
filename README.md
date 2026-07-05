@@ -30,49 +30,4 @@ Install with:
 adb install -r X3GalaxySim-debug.apk
 ```
 
-## Build
 
-Requirements:
-
-- Android Studio or Android Gradle Plugin compatible CLI environment
-- JDK 17
-- RayNeo SDK AARs in `app/libs/`
-
-Build:
-
-```bash
-./gradlew :app:assembleDebug
-```
-
-The output APK will be:
-
-```text
-app/build/outputs/apk/debug/app-debug.apk
-```
-
-## Voice Assets And Security
-
-The app runs fully offline and does **not** include the Fish Audio API key. Voice clips are pre-rendered into `app/src/main/assets/voice/`.
-
-The local development file below is intentionally ignored and must not be committed:
-
-```text
-app/tools/fish.config
-```
-
-If new dialogue is added, generate voices locally, then rotate the API key afterward:
-
-```bash
-python3 app/tools/generate_dialogue.py
-```
-
-## Runtime Controls
-
-- Single tap: start/resume or select the highlighted settings item.
-- Forward/back swipe in settings: navigate menu.
-- Double tap: open or exit settings.
-- Long press: quick audio mix / close settings fallback.
-
-## Notes
-
-This repository is a research and experience prototype for RayNeo X3 Pro spatial display. It is designed to make the scale of space legible: distances, light, orbital infrastructure, planetary environments, stellar nurseries, exoplanets, and the galactic center are treated as scientific landmarks rather than backdrop decoration.
