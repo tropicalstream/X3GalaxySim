@@ -125,6 +125,8 @@ class Director(
 
     /** Settings-menu RESTART: rewind the whole ride to the dock. */
     fun restart() {
+        warpToken++                 // cancels a light-speed run in flight
+        warping = false
         crew.stopAll()
         ambient.stop()
         elapsed = 0L
@@ -149,6 +151,142 @@ class Director(
         RideState.finished = false
         RideState.started = true
         RideState.paused = false
+    }
+
+    // ---------------- light-speed jump ----------------
+
+    @Volatile private var warping = false
+    private var warpToken = 0
+    private var warpTargetMs = -1L
+
+    fun isWarping() = warping
+
+    /**
+     * Activity is pausing mid-flight (doze, app switch): finish the jump
+     * instantly and seat the ride paused, so no audio runs in the background
+     * and resume drops the guest exactly at their chosen stop.
+     */
+    fun cancelWarpAndSeat() {
+        if (!warping) return
+        warpToken++
+        warping = false
+        RideState.beta = 0f
+        finalizeJump(warpTargetMs)
+        pause()
+    }
+
+    /**
+     * Menu "JUMP TO SEGMENT": not a teleport — the ship makes a visible
+     * LIGHT-SPEED run from wherever it is to waypoint rail coordinate [u]:
+     * 5 s to a next-door stop, up to 20 s across the whole rail, smoothstep-
+     * eased so it winds up and brakes. While in flight the cue engine stays
+     * frozen (paused) and beta swells to ~0.96c so the Doppler starfield and
+     * dust streaks sell the speed. On arrival the tour is re-seated a few
+     * seconds early exactly as before, so the approach + arrival callout for
+     * that POI still play.
+     */
+    fun jumpToSegment(u: Float) {
+        crew.stopAll()
+        ambient.stop()
+        warpToken++
+        val token = warpToken
+        val target = (timeForProgress(u) - 3000L).coerceIn(0L, duration - 60_000L)
+        val fromU = RideState.progress
+        val toU = progressAt(target)
+        val frac = Math.abs(toU - fromU) / SolarSystem.MAX_U
+        if (frac < 0.01f) { finalizeJump(target); return }   // already there: just seat
+        warpTargetMs = target
+        val durMs = (5000f + 15000f * frac).toLong().coerceIn(5000L, 20000L)
+        warping = true
+        RideState.started = true
+        RideState.paused = true                    // freeze cues/telemetry while we fly
+        sfx.play("warp_jump")
+        val t0 = System.currentTimeMillis()
+        var prevU = fromU
+        val step = object : Runnable {
+            override fun run() {
+                if (token != warpToken) return     // superseded or cancelled
+                val f = ((System.currentTimeMillis() - t0).toFloat() / durMs).coerceIn(0f, 1f)
+                val e = f * f * (3f - 2f * f)
+                val nowU = fromU + (toU - fromU) * e
+                // live warp telemetry: real rail speed + a Doppler swell that
+                // peaks mid-run and eases off for the braking phase
+                val a = rail.camPosAt(prevU); val b = rail.camPosAt(nowU)
+                val dxw = b[0] - a[0]; val dyw = b[1] - a[1]; val dzw = b[2] - a[2]
+                val auS = Math.sqrt((dxw * dxw + dyw * dyw + dzw * dzw).toDouble()) /
+                        SolarSystem.AU_WORLD / 0.033
+                RideState.speedText = formatSpeed(auS)
+                RideState.beta = 0.96f * kotlin.math.sin(Math.PI.toFloat() * f)
+                RideState.gammaText = String.format("%.3f",
+                    1.0 / Math.sqrt(1.0 - (RideState.beta.toDouble() * RideState.beta)))
+                RideState.progress = nowU
+                prevU = nowU
+                minimap.update(nowU, SolarSystem.MAX_U)
+                if (f >= 1f) {
+                    warping = false
+                    sfx.play("scene_chime", 0.9f)
+                    finalizeJump(target)
+                } else {
+                    handler.postDelayed(this, 33L)
+                }
+            }
+        }
+        handler.post(step)
+    }
+
+    /**
+     * Seat the tour at ride-time [target]. Silently re-applies every state cue
+     * up to that point so shaders, ambient bed, HUD and the no-repeat ledger
+     * stay consistent, then lets the timeline run forward normally.
+     */
+    private fun finalizeJump(target: Long) {
+        elapsed = target
+        cueIdx = 0
+        playedClips.clear()
+        chronicleIdx = 0
+        firedArrivals.clear()
+        lastPoiName = null
+        fillerUnused.clear(); fillerUnused.addAll(fillerPool.shuffled(rnd))
+        nextEventElapsed = target + 300_000L + rnd.nextLong(600_000L)
+        lastAlienElapsed = -99_999_999L
+        hudTarget = 1f
+        RideState.beta = 0f; RideState.lensing = 0f; RideState.impact = 0f
+        RideState.caption = ""; RideState.captionUntilMs = 0L
+        RideState.captionSegments = emptyList()
+        RideState.sceneUntilMs = 0L; RideState.letterboxTarget = 0f
+        RideState.hudAlpha = 1f
+        RideState.shieldPct = 100f
+        RideState.eventKind = 0
+        RideState.finished = false
+        catchUpStateTo(target)             // re-fire state cues (no audio), set progress
+        RideState.elapsedMs = target
+        RideState.started = true
+        RideState.paused = false
+    }
+
+    /**
+     * Triple-tap recalibration: restore the framing the SCRIPT intends at this
+     * exact point of the mission. Reframe cues are cumulative partial updates
+     * (left/right touch only yaw, up/down only pitch), so replay them all from
+     * the start of the ride to now — same semantics as fire()/catchUpStateTo.
+     */
+    fun recalibrateView() {
+        var yawT = 0f
+        var pitchT = 0f
+        for (c in cues) {
+            if (c.t > elapsed) break
+            when (c.json.optString("reframe")) {
+                "forward" -> { yawT = 0f; pitchT = 0f }
+                "left" -> yawT = -0.65f
+                "right" -> yawT = 0.65f
+                "up" -> pitchT = 0.38f
+                "down" -> pitchT = -0.25f
+                "back" -> yawT = 3.05f
+            }
+        }
+        RideState.baseYawTarget = yawT
+        RideState.basePitchTarget = pitchT
+        android.util.Log.i("PaleBlue", "recalibrateView @${elapsed / 1000}s: baseYaw=$yawT basePitch=$pitchT")
     }
 
     fun startOrResumeFromSave() {
@@ -181,6 +319,8 @@ class Director(
     }
 
     fun release() {
+        warpToken++
+        warping = false
         handler.removeCallbacksAndMessages(null)
         thread.quitSafely()
     }

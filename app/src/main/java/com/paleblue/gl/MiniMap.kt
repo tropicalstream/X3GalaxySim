@@ -224,8 +224,8 @@ class MiniMap {
         GLES20.glEnable(GLES20.GL_DEPTH_TEST)
         GLES20.glDisable(GLES20.GL_BLEND)
         GLES20.glDisableVertexAttribArray(aPos)
-        // one-line readout under the panel
+        // one-line readout under the panel (2x size)
         readout.setText(readoutText, backingBar = false)
-        readout.draw(cx, cy - halfH - 0.07f, 0.035f, eyeAspect, alpha)
+        readout.draw(cx, cy - halfH - 0.10f, 0.07f, eyeAspect, alpha)
     }
 }

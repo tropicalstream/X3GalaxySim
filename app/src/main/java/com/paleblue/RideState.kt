@@ -51,6 +51,8 @@ object RideState {
     // Settings menu (double-tap) + subtitles
     @Volatile var menuOpen = false
     @Volatile var menuIndex = 0
+    @Volatile var menuMode = 0             // 0 main settings, 1 segment picker
+    @Volatile var segmentIndex = 0         // highlighted waypoint in the picker
     @Volatile var restartConfirm = false
     @Volatile var subtitlesOn = true
 
