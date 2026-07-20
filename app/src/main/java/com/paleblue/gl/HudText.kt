@@ -91,11 +91,21 @@ class HudText(
             var size = baseTextSize
             var chars = maxChars
             var lines = wrap(text, chars)
-            // auto-fit: shrink font (and widen char budget) until it all fits
+            // auto-fit pass 1: shrink font (widening the char budget) only while
+            // re-wrapping actually reduces the line count — explicit \n lines
+            // can never merge, so shrinking further would just waste size
             while (lines.size > maxLines && size > baseTextSize * 0.45f) {
-                size *= 0.88f
-                chars = (maxChars * baseTextSize / size).toInt()
-                lines = wrap(text, chars)
+                val smaller = size * 0.88f
+                val rechars = (maxChars * baseTextSize / smaller).toInt()
+                val relines = wrap(text, rechars)
+                if (relines.size >= lines.size) break
+                size = smaller; chars = rechars; lines = relines
+            }
+            // auto-fit pass 2: whatever the line count, the block must fit the
+            // texture height — scale to fit exactly instead of overflowing
+            val maxBlockH = texH - 30f
+            if (lines.size * size * 1.28f > maxBlockH) {
+                size = maxBlockH / (lines.size * 1.28f)
             }
             fill.textSize = size
             stroke.textSize = size

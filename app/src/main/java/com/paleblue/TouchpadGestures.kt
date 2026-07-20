@@ -17,7 +17,8 @@ class TouchpadGestures(
     private val onDoubleTap: () -> Unit,
     private val onLongPress: () -> Unit,
     private val onSwipeForward: () -> Unit = {},
-    private val onSwipeBack: () -> Unit = {}
+    private val onSwipeBack: () -> Unit = {},
+    private val onTripleTap: () -> Unit = {}
 ) {
     companion object {
         private const val TAP_MS = 250L
@@ -34,6 +35,7 @@ class TouchpadGestures(
         var moved = false
         var longFired = false
         var lastTapTime = 0L
+        var tapCount = 0
         var pendingSingle: Runnable? = null
     }
 
@@ -86,15 +88,25 @@ class TouchpadGestures(
                     return true
                 }
                 if (held > TAP_MS) return true
-                // it's a tap: single or double?
-                if (now - pad.lastTapTime <= DOUBLE_MS) {
-                    pad.pendingSingle?.let { handler.removeCallbacks(it) }
-                    pad.pendingSingle = null
+                // it's a tap: count the burst, decide when the window closes.
+                // A third tap fires TRIPLE instantly; otherwise the count is
+                // resolved DOUBLE_MS after the last tap (so double-tap waits one
+                // window to be sure a triple isn't coming).
+                pad.tapCount = if (now - pad.lastTapTime <= DOUBLE_MS) pad.tapCount + 1 else 1
+                pad.lastTapTime = now
+                pad.pendingSingle = null   // superseded (already removed above)
+                if (pad.tapCount >= 3) {
+                    pad.tapCount = 0
                     pad.lastTapTime = 0L
-                    onDoubleTap()
+                    onTripleTap()
                 } else {
-                    pad.lastTapTime = now
-                    val r = Runnable { pad.pendingSingle = null; onSingleTap() }
+                    val n = pad.tapCount
+                    val r = Runnable {
+                        pad.pendingSingle = null
+                        pad.tapCount = 0
+                        pad.lastTapTime = 0L
+                        if (n == 1) onSingleTap() else onDoubleTap()
+                    }
                     pad.pendingSingle = r
                     handler.postDelayed(r, DOUBLE_MS)
                 }

@@ -51,22 +51,40 @@ class MainActivity : AppCompatActivity() {
             onDoubleTap = { onDoubleTap() },
             onLongPress = { onLongPress() },
             onSwipeForward = { onSwipeMenu(1) },
-            onSwipeBack = { onSwipeMenu(-1) }
+            onSwipeBack = { onSwipeMenu(-1) },
+            onTripleTap = { onTripleTap() }
         )
 
         overlay("SINGLE TAP TO FASTEN SEATBELT", 12_000)
         // the Navigator reads the title card aloud (Fish-voiced)
         glView.postDelayed({ director.playBootWelcome() }, 1600)
+
+        // debug only: `adb shell am start ... --ef warpU <u>` fires a light-speed
+        // jump straight to rail coordinate u, bypassing the temple-pad menu;
+        // `--ei menuSeg <i>` opens the segment picker preselected at index i
+        val warpU = intent?.getFloatExtra("warpU", -1f) ?: -1f
+        if (warpU >= 0f) glView.postDelayed({ director.jumpToSegment(warpU) }, 4000)
+        val menuSeg = intent?.getIntExtra("menuSeg", -1) ?: -1
+        if (menuSeg >= 0) glView.postDelayed({
+            RideState.menuMode = 1
+            RideState.segmentIndex = menuSeg.coerceIn(0, MiniMap.WAYPOINTS.size - 1)
+            RideState.menuOpen = true
+        }, 3000)
     }
 
     // ---------------- gestures ----------------
 
-    private val menuItemCount = 6
+    private val mainMenuCount = 7
+    private val menuItemCount get() =
+        if (RideState.menuMode == 1) MiniMap.WAYPOINTS.size else mainMenuCount
 
     private fun onSingleTap() {
         val now = System.currentTimeMillis()
         when {
             RideState.menuOpen -> selectMenuItem()
+            director.isWarping() -> {                         // no pausing at light speed
+                overlay("LIGHT SPEED — HOLD ON", 2000)
+            }
             now < mixMenuOpenUntil -> {                       // quick Audio Mix cycler
                 RideState.applyMixMode((RideState.mixMode + 1) % 4)
                 mixMenuOpenUntil = now + 4000
@@ -93,10 +111,17 @@ class MainActivity : AppCompatActivity() {
     private fun onDoubleTap() {
         if (!RideState.menuOpen) {
             RideState.menuIndex = 0
+            RideState.menuMode = 0
             RideState.menuOpen = true
             if (RideState.started && !RideState.paused) director.pause()
             overlay("SWIPE: NAVIGATE · TAP: SELECT · DOUBLE-TAP: EXIT", 5000)
             sfx.play("ui_tap", 0.8f)
+            return
+        }
+        if (RideState.menuMode == 1) {                        // picker: back to main menu
+            RideState.menuMode = 0
+            RideState.menuIndex = 1
+            sfx.play("ui_tap", 0.7f)
             return
         }
         RideState.menuOpen = false
@@ -107,12 +132,27 @@ class MainActivity : AppCompatActivity() {
 
     private fun onSwipeMenu(delta: Int) {
         if (!RideState.menuOpen) return
-        RideState.menuIndex = (RideState.menuIndex + delta + menuItemCount) % menuItemCount
-        RideState.restartConfirm = false
+        if (RideState.menuMode == 1) {
+            val n = MiniMap.WAYPOINTS.size
+            RideState.segmentIndex = (RideState.segmentIndex + delta + n) % n
+        } else {
+            RideState.menuIndex = (RideState.menuIndex + delta + menuItemCount) % menuItemCount
+            RideState.restartConfirm = false
+        }
         sfx.play("ui_tap", 0.55f)
     }
 
     private fun selectMenuItem() {
+        if (RideState.menuMode == 1) {                        // JUMP to the chosen segment
+            val wp = MiniMap.WAYPOINTS[RideState.segmentIndex]
+            director.jumpToSegment(wp.u)
+            RideState.menuOpen = false
+            RideState.menuMode = 0
+            RideState.restartConfirm = false
+            sfx.play("ui_save", 0.8f)
+            overlay("LIGHT SPEED TO ${wp.name}", 3500)
+            return
+        }
         when (RideState.menuIndex) {
             0 -> {                                            // RESUME TOUR
                 RideState.menuOpen = false
@@ -120,13 +160,22 @@ class MainActivity : AppCompatActivity() {
                 if (RideState.started) director.resume()
                 overlay("RESUMED", 2000)
             }
-            1 -> {                                            // SAVE TOUR
+            1 -> {                                            // JUMP TO SEGMENT
+                RideState.restartConfirm = false
+                RideState.menuMode = 1
+                // preselect the waypoint nearest the current rail position
+                RideState.segmentIndex = MiniMap.WAYPOINTS
+                    .indexOfLast { it.u <= RideState.progress }.coerceAtLeast(0)
+                overlay("SWIPE: PICK SEGMENT · TAP: START · DOUBLE-TAP: BACK", 5000)
+                sfx.play("ui_tap", 0.7f)
+            }
+            2 -> {                                            // SAVE TOUR
                 RideState.restartConfirm = false
                 director.saveTour()
                 sfx.play("ui_save", 0.8f)
                 overlay("TOUR SAVED", 2500)
             }
-            2 -> {                                            // RESTART TOUR
+            3 -> {                                            // RESTART TOUR
                 if (!RideState.restartConfirm) {
                     RideState.restartConfirm = true
                     overlay("TAP RESTART AGAIN TO CONFIRM", 3500)
@@ -138,28 +187,41 @@ class MainActivity : AppCompatActivity() {
                     overlay("RESTARTING FROM EARTH", 3500)
                 }
             }
-            3 -> {                                            // SUBTITLES
+            4 -> {                                            // SUBTITLES
                 RideState.restartConfirm = false
                 RideState.subtitlesOn = !RideState.subtitlesOn
                 sfx.play("ui_tap", 0.7f)
             }
-            4 -> {                                            // AUDIO MIX
+            5 -> {                                            // AUDIO MIX
                 RideState.restartConfirm = false
                 RideState.applyMixMode((RideState.mixMode + 1) % 4)
                 sfx.play("ui_tap", 0.7f)
             }
-            5 -> {                                            // RECENTER VIEW
+            6 -> {                                            // RECENTER VIEW
                 RideState.restartConfirm = false
                 gaze.recenter()
+                director.recalibrateView()   // same full recalibration as triple-tap
                 overlay("VIEW RECENTERED", 2000)
                 sfx.play("ui_tap", 0.7f)
             }
         }
     }
 
+    /** Triple tap: full view recalibration — re-zero the IMU gaze to the current
+     *  head pose AND restore the framing the script intends at this mission point.
+     *  The fix for tracking drift (seen around Jupiter) without opening any menu. */
+    private fun onTripleTap() {
+        gaze.recenter()
+        director.recalibrateView()
+        sfx.play("ui_tap", 0.8f)
+        overlay("VIEW RECALIBRATED", 2500)
+        android.util.Log.i("PaleBlue", "Triple-tap: gaze re-zeroed + mission reframe restored")
+    }
+
     private fun onLongPress() {
         if (RideState.menuOpen) {                             // close menu (stays paused)
             RideState.menuOpen = false
+            RideState.menuMode = 0
             RideState.restartConfirm = false
             overlay(if (RideState.paused) "PAUSED — TAP TO RESUME" else "", 4000)
             sfx.play("ui_tap", 0.7f)
@@ -201,6 +263,7 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         glView.onPause()
         gaze.stop()
+        director.cancelWarpAndSeat()       // a jump in flight lands instantly, paused
         if (RideState.started && !RideState.paused) {
             director.pause()
         }

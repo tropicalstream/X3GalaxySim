@@ -163,6 +163,38 @@ class SolarSystem(private val ctx: Context) {
     // ---------- drawing ----------
     private val model = FloatArray(16)
     private val mvp = FloatArray(16)
+    private val effLight = FloatArray(3)
+
+    /**
+     * SOLAR-SIDE TRACKING: on the X3 Pro waveguide an unlit hemisphere renders
+     * as a black hole in the sky, and the rail often views bodies from their
+     * anti-solar side after a flyby. Rather than reroute the rail (which the
+     * cue choreography depends on), swing each body's EFFECTIVE sun around it
+     * so the camera-facing hemisphere is the lit one. The blend is zero when
+     * the real geometry is already favorable, so approach terminators still
+     * read naturally; it only takes over as the true lit fraction falls away.
+     */
+    private fun solarSideLight(b: Body, light: FloatArray, camPos: FloatArray): FloatArray {
+        var sx = light[0] - b.pos[0]; var sy = light[1] - b.pos[1]; var sz = light[2] - b.pos[2]
+        val sl = sqrt(sx * sx + sy * sy + sz * sz).coerceAtLeast(1e-4f)
+        sx /= sl; sy /= sl; sz /= sl
+        var vx = camPos[0] - b.pos[0]; var vy = camPos[1] - b.pos[1]; var vz = camPos[2] - b.pos[2]
+        val vl = sqrt(vx * vx + vy * vy + vz * vz).coerceAtLeast(1e-4f)
+        vx /= vl; vy /= vl; vz /= vl
+        val facing = sx * vx + sy * vy + sz * vz          // 1 = camera on solar side
+        // full tracking by the time the view is side-on (facing ≈ 0.15): a close
+        // flyby sweeps through side-on geometry, and a half-crescent "sliver" is
+        // still mostly invisible on the waveguide. Natural light above 0.75,
+        // where the visible face is already ≥ ~90% lit.
+        val t = ((0.75f - facing) / 0.6f).coerceIn(0f, 1f)
+        if (t <= 0f) return light
+        var mx = sx + (vx - sx) * t; var my = sy + (vy - sy) * t; var mz = sz + (vz - sz) * t
+        val ml = sqrt(mx * mx + my * my + mz * mz).coerceAtLeast(1e-4f)
+        effLight[0] = b.pos[0] + mx / ml * sl
+        effLight[1] = b.pos[1] + my / ml * sl
+        effLight[2] = b.pos[2] + mz / ml * sl
+        return effLight
+    }
 
     fun drawBodies(planetShader: PlanetShader, sphere: Sphere, vp: FloatArray,
                    camPos: FloatArray, sunlight: Float, timeSec: Float) {
@@ -175,7 +207,7 @@ class SolarSystem(private val ctx: Context) {
             Matrix.rotateM(model, 0, timeSec * 1.2f, 0f, 1f, 0f)   // slow spin
             Matrix.scaleM(model, 0, b.radius, b.radius, b.radius)
             Matrix.multiplyMM(mvp, 0, vp, 0, model, 0)
-            val light = b.lightPos ?: SUN_POS
+            val light = solarSideLight(b, b.lightPos ?: SUN_POS, camPos)
             val localSunlight = if (b.lightPos != null) 1.1f else sunlight
             planetShader.draw(sphere, mvp, model, b.texture, b.baseColor,
                 light, camPos, localSunlight, b.atmoColor, b.atmoStrength,

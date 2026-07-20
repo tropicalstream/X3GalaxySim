@@ -145,10 +145,14 @@ class StereoRenderer(
         prevCamPos[0] = camPos[0]; prevCamPos[1] = camPos[1]; prevCamPos[2] = camPos[2]
         havePrev = true
 
-        // real physics, emotional arc: inverse-square sunlight from ship→Sun distance
+        // Sunlight on the X3 waveguide: additive optics can show neither faint
+        // nor clipped-white, so distance dimming is display-clamped to a narrow
+        // band around full texture exposure. The inverse-square arc survives
+        // only as a slight extra warmth near the Sun; the physical distance
+        // still drives telemetry.
         val ds = dist(camPos, SolarSystem.SUN_POS) / SolarSystem.AU_WORLD
         RideState.sunDistAu = ds
-        val sunlight = (1f / (ds * ds)).coerceIn(0.015f, 4f)
+        val sunlight = (1f / (ds * ds)).coerceIn(0.95f, 1.2f)
 
         // ship heading (rail + reframe) — bias the neutral view toward the next
         // point of interest, while gaze rotates the HEAD freely around it.
@@ -328,16 +332,34 @@ class StereoRenderer(
 
         // settings menu: swipe=move · tap=select · double-tap=exit
         if (RideState.menuOpen) {
-            val items = listOf(
-                "RESUME TOUR",
-                "SAVE TOUR",
-                if (RideState.restartConfirm) "CONFIRM RESTART?" else "RESTART TOUR",
-                "SUBTITLES: " + if (RideState.subtitlesOn) "ON" else "OFF",
-                RideState.mixModeLabel(),
-                "RECENTER VIEW")
-            val body = StringBuilder("— SETTINGS —")
-            items.forEachIndexed { i, s ->
-                body.append('\n').append(if (i == RideState.menuIndex) "▶ $s" else "· $s")
+            val body = StringBuilder()
+            if (RideState.menuMode == 1) {                    // segment picker
+                body.append("— JUMP TO SEGMENT —")
+                val wps = MiniMap.WAYPOINTS
+                val sel = RideState.segmentIndex.coerceIn(0, wps.size - 1)
+                // windowed list of 7 around the selection so it fits the HUD
+                val win = 7
+                var start = (sel - win / 2).coerceIn(0, (wps.size - win).coerceAtLeast(0))
+                val end = (start + win).coerceAtMost(wps.size)
+                if (start > 0) body.append("\n  ⋯")
+                for (i in start until end) {
+                    body.append('\n')
+                        .append(if (i == sel) "▶ ${i + 1}. ${wps[i].name}" else "· ${i + 1}. ${wps[i].name}")
+                }
+                if (end < wps.size) body.append("\n  ⋯")
+            } else {                                          // main settings
+                val items = listOf(
+                    "RESUME TOUR",
+                    "JUMP TO SEGMENT ▸",
+                    "SAVE TOUR",
+                    if (RideState.restartConfirm) "CONFIRM RESTART?" else "RESTART TOUR",
+                    "SUBTITLES: " + if (RideState.subtitlesOn) "ON" else "OFF",
+                    RideState.mixModeLabel(),
+                    "RECENTER VIEW")
+                body.append("— SETTINGS —")
+                items.forEachIndexed { i, s ->
+                    body.append('\n').append(if (i == RideState.menuIndex) "▶ $s" else "· $s")
+                }
             }
             menuText.setText(body.toString(), backingBar = true)
             menuText.draw(parallax, 0.06f, 0.34f, eyeAspect, 0.97f)
@@ -350,7 +372,7 @@ class StereoRenderer(
             sceneTitle.setText(RideState.sceneTitle, backingBar = false)
             sceneTitle.draw(parallax, 0.46f, 0.105f, eyeAspect, scFade)
             sceneSub.setText(RideState.sceneSub, backingBar = false)
-            sceneSub.draw(parallax, 0.30f, 0.055f, eyeAspect, scFade * 0.9f)
+            sceneSub.draw(parallax, 0.28f, 0.11f, eyeAspect, scFade * 0.9f)   // 2x size
         }
     }
 

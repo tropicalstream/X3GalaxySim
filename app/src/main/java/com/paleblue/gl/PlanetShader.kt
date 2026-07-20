@@ -55,9 +55,13 @@ class PlanetShader {
             }
             float ndl = max(dot(N, L), 0.0);
             vec3 H = normalize(L + V);
-            float spec = pow(max(dot(N, H), 0.0), 24.0) * 0.25;
+            // tight, modest specular: with the solar-side-tracked light L can
+            // approach V, and a broad highlight would wash the whole disc white
+            float spec = pow(max(dot(N, H), 0.0), 48.0) * 0.10;
             float fresnel = pow(1.0 - max(dot(N, V), 0.0), 3.0);
-            vec3 lit = albedo * (uMinAmbient + ndl * uSunlight)
+            // 0.85 exposure keeps a fully lit face just under clip, so texture
+            // detail survives on the waveguide instead of blowing out to white
+            vec3 lit = albedo * (uMinAmbient + ndl * uSunlight * 0.85)
                      + vec3(spec) * uSunlight * ndl
                      + uAtmoColor * fresnel * uAtmoStrength * (0.15 + 0.85 * ndl * uSunlight);
             vec3 emis = albedo * (1.2 + 0.3 * fresnel);

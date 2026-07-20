@@ -9,10 +9,12 @@ captures/
 .cxx/
 __pycache__/
 *.pyc
+.kotlin/
 
 # SECRETS — never commit the Fish Audio key or voice ids
 app/tools/fish.config
 app/tools/voice_design_out/
+app/src/main/assets/voice/manifest.json
 
 # Release binaries are uploaded to GitHub releases, not committed
 releases/*.apk
