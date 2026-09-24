@@ -4,6 +4,13 @@
 
 The simulation is built around scientific context rather than arcade fantasy. It uses real Solar System textures where available, a star catalog backdrop, inverse-square sunlight, planet and moon waypoints, telemetry readouts, arrival callouts, and narration about astronomy, spaceflight, climate history, conflict, cooperation, and humanity's long road toward a Kardashev Type I future.
 
+## Screenshots
+
+<p>
+  <img src="images/station.png" width="45%" alt="Ship docked at Earth Station Aurora with telemetry HUD">
+  <img src="images/earth.png" width="45%" alt="Project Pale Blue title over an Earth close-up">
+</p>
+
 ## Highlights
 
 - RayNeo X3 Pro stereo rendering with Mercury SDK registration.
