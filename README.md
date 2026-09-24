@@ -9,6 +9,10 @@ X3GalaxySim is a stereoscopic, on-rails science tour for the RayNeo X3 Pro AR gl
   <img src="images/earth.png" width="45%" alt="Project Pale Blue title over an Earth close-up">
 </p>
 
+## Demo
+
+[![X3GalaxySim trailer](https://i.ytimg.com/vi/og2Ga1j_5pQ/hqdefault.jpg)](https://youtu.be/og2Ga1j_5pQ)
+
 ## Controls
 
 - Gaze (3DoF head tracking) — look around the cabin and scene
